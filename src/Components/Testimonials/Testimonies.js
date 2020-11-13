@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 const Testimonies = () => {
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	}, []);
+
 	return (
 		<div className="container my-5 testimonials">
 			<h1 className="font-weight-bold mb-3 mb-lg-4 text-center">Testimonials</h1>
 			<div className="row">
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">
@@ -29,7 +34,7 @@ const Testimonies = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">
@@ -52,7 +57,7 @@ const Testimonies = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">
@@ -75,7 +80,7 @@ const Testimonies = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">
@@ -98,7 +103,7 @@ const Testimonies = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">
@@ -121,7 +126,7 @@ const Testimonies = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
 						<div className="card">
 							<div className="d-flex align-items-center flex-nowrap pt-3 px-3">

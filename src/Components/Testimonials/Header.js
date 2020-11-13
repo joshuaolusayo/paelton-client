@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
+import AOS from "aos";
 
 const Header = () => {
 	const [showNav, setShowNav] = useState(false);
+
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
 	return (
-		<header
-			className="header w-100 h-100 bg-pry"
-			// style={{ background: `url("/assets/pattern/pattern_1.svg") no-repeat 50% 10%`, backgroundSize: "cover" }}
-		>
+		<header className="header w-100 h-100 bg-pry">
 			<div className="container text-light">
 				<nav className="d-flex justify-content-between align-items-center">
 					<Link to="/">
@@ -22,8 +24,8 @@ const Header = () => {
 
 				<div className="abs">
 					<div className="d-flex flex-column justify-content-start align-items-start col-md-8">
-						<h1 className="font-weight-bold">Testimonials.</h1>
-						<p>
+						<h1 className="font-weight-bold" data-aos="fade-down">Testimonials.</h1>
+						<p data-aos="fade-up">
 							Men of God speak about the influence of Pa S G Elton. (Excerpts from Essence Restored Magazine maiden edition
 							(2004))
 						</p>

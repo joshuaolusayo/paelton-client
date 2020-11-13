@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const Audios = () => {
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
+
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"
@@ -33,7 +38,7 @@ const Audios = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"
@@ -62,7 +67,7 @@ const Audios = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"
@@ -91,7 +96,7 @@ const Audios = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"
@@ -120,7 +125,7 @@ const Audios = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"
@@ -149,7 +154,7 @@ const Audios = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<div className="card bg-light shadow">
 						<img
 							className="card-img-top"

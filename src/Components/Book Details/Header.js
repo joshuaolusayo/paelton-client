@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
+import AOS from "aos";
 
 const Header = () => {
 	const [showNav, setShowNav] = useState(false);
+
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
 	return (
 		<header className="header w-100 h-100 bg-pry">
 			<div className="container text-light">
@@ -18,11 +23,11 @@ const Header = () => {
 				</nav>
 
 				<div className="abs d-flex flex-column">
-					<h1 className="font-weight-bold mb-4">The Kingdom has come</h1>
-					<p>
+					<h1 className="font-weight-bold mb-4" data-aos="fade-down">The Kingdom has come</h1>
+					<p data-aos="fade-up">
 						<i className="fa fa-child pr-3"></i>Ruth Elton
 					</p>
-					<p>
+					<p data-aos="fade-up">
 						<i className="fa fa-copy pr-3"></i>70 pages
 					</p>
 				</div>

@@ -8,6 +8,7 @@ import PaEltonProfile from "./Components/Profile";
 import Testimonials from "./Components/Testimonials";
 import TestimonyDetails from "./Components/Testimony Details";
 
+import "aos/dist/aos.css";
 import "./styles.css";
 
 ReactDOM.render(
