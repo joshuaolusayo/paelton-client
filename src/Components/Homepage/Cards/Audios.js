@@ -24,12 +24,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
@@ -53,12 +55,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
@@ -82,12 +86,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
@@ -111,12 +117,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
@@ -140,12 +148,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
@@ -169,12 +179,14 @@ const Audios = () => {
 								looking at its layout. The point of
 							</p>
 							<div className="d-flex justiy-content-between align-items-center">
-								<button className="btn bg-pry text-light dwn">
-									Download&nbsp;
-									<span>
-										<i className="fa fa-download"></i>
-									</span>
-								</button>
+								<a href="/audio.mp3" download="Message Title">
+									<button className="btn bg-pry text-light dwn">
+										Download&nbsp;
+										<span>
+											<i className="fa fa-download"></i>
+										</span>
+									</button>
+								</a>
 								<audio controls className="audio">
 									<source src="/audio.mp3" type="audio/mpeg" />
 									Your browser does not support the audio element.
