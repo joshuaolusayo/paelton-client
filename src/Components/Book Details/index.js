@@ -1,18 +1,25 @@
-import React from 'react'
-import Footer from '../Reusable Components/Footer'
-import ScrollToTop from '../Reusable Components/ScrollToTop'
-import Details from './Details'
-import Header from './Header'
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Footer from "../Reusable Components/Footer";
+import ScrollToTop from "../Reusable Components/ScrollToTop";
+import Details from "./Details";
+import Header from "./Header";
 
 const BookDetails = () => {
-    return (
-        <div className="hmpg book-details">
-            <Header />
-            <Details />
-            <Footer />
-            <ScrollToTop />
-        </div>
-    )
-}
+	const { pathname } = useLocation();
 
-export default BookDetails
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+
+	return (
+		<div className="hmpg book-details">
+			<Header />
+			<Details />
+			<Footer />
+			<ScrollToTop />
+		</div>
+	);
+};
+
+export default BookDetails;

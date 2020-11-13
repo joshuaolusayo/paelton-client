@@ -1,16 +1,23 @@
-import React from 'react'
-import ScrollToTop from '../Reusable Components/ScrollToTop'
-import Details from './Details'
-import Header from './Header'
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import ScrollToTop from "../Reusable Components/ScrollToTop";
+import Details from "./Details";
+import Header from "./Header";
 
 const TestimonyDetails = () => {
-    return (
-        <div className="hmpg testimony-details">
-            <Header />
-            <Details />
-            <ScrollToTop />
-        </div>
-    )
-}
+	const { pathname } = useLocation();
 
-export default TestimonyDetails
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+
+	return (
+		<div className="hmpg testimony-details">
+			<Header />
+			<Details />
+			<ScrollToTop />
+		</div>
+	);
+};
+
+export default TestimonyDetails;
