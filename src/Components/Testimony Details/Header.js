@@ -7,9 +7,9 @@ const Header = () => {
 	return (
 		<header className="header w-100 h-100 bg-pry">
 			<div className="container text-light">
-				<nav className="d-flex justify-content-between align-itmes-center">
+				<nav className="d-flex justify-content-between align-items-center">
 					<Link to="/">
-						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" />
+						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 					</Link>
 
 					<button className="btn bg-transparent text-light">
@@ -17,11 +17,16 @@ const Header = () => {
 					</button>
 				</nav>
 
-				<div className="abs d-flex flex-column justify-content-between h-50">
-					<h1 className="font-weight-bold mb-4">Herald of the last days. Vol. 2</h1>
-					<p>
-						<i className="fa fa-clock-o pr-3 text-light"></i> Reading time about 30 minutes
-					</p>
+				<div className="abs">
+					<div className="d-flex flex-column justify-content-start align-items-start col-md-8">
+						<h1 className="font-weight-bold">Revd. Emiko Amotsuka</h1>
+						<p className="my-3 my-md-3">
+							Former President, Ibadan Varsity Christian Union (IVCU, 1975/76), President Koinonia Ministries, Ibadan, Nigeria
+						</p>
+						<span>
+							<i className="fa fa-clock-o"></i> 17 mins read
+						</span>
+					</div>
 				</div>
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />

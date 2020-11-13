@@ -7,12 +7,12 @@ const Header = () => {
 	return (
 		<header
 			className="header w-100 h-100"
-			style={{ background: `url("/assets/pattern/pattern_1.svg") no-repeat 50% 100%`, backgroundSize: "cover" }}
+			style={{ background: `url("/assets/pattern/pattern_1.svg") no-repeat 50% 10%`, backgroundSize: "cover" }}
 		>
 			<div className="container text-light text-center">
-				<nav className="d-flex justify-content-between align-itmes-center">
+				<nav className="d-flex justify-content-between align-items-center">
 					<Link to="/">
-						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" />
+						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 					</Link>
 
 					<button className="btn bg-transparent text-light">
@@ -20,9 +20,12 @@ const Header = () => {
 					</button>
 				</nav>
 
-				<div className="abs d-flex flex-column justify-content-center align-items-center">
-					<h1 className="font-weight-bold">Explore all the messages of S G Elton provided for free.</h1>
-					<button className="btn bg-outline-pry px-5 py-2 shadow mt-3 mt-md-5">Explore</button>
+				<div className="abs d-flex justify-content-between align-items-center">
+					<div className="d-flex flex-column justify-content-start align-items-start">
+						<h1 className="font-weight-bold">Pa Elton Profile.</h1>
+						<p>Written by Adeyemo Temidayo</p>
+					</div>
+					<img className="d-none d-md-block eltn rounded-circle" src="/assets/elton.png" alt="Pa Elton" />
 				</div>
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />

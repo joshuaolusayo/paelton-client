@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Articles from "../Homepage/Cards/Articles";
-import Share from "./Share";
+import Share from "../Reusable Components/Share";
 
 const Details = () => {
 	return (
@@ -86,7 +86,7 @@ const Details = () => {
 				<div className="col-12 border-bottom mb-5">
 					<h3 className="font-weight-bold">Other articles</h3>
 				</div>
-                <Articles />
+				<Articles />
 			</div>
 		</div>
 	);

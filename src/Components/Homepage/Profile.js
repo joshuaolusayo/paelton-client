@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
 	return (
@@ -15,7 +16,9 @@ const Profile = () => {
 							in response to a divine call to be a missionary; his wife and only child, 3-year old Ruth, joining him about six
 							months later. And since that time right up to his eventual home-call 50 years later, Pa Elton...{" "}
 						</p>
-						<button className="btn rounded bg-sec text-light px-3 py-2 read-more">Read more</button>
+						<Link to="/about-elton">
+							<button className="btn rounded bg-sec text-light px-3 py-2 read-more">Read more</button>
+						</Link>
 					</div>
 					<div className="col-lg-6 d-none d-lg-block">
 						<div className="d-flex flex-no-wrap">

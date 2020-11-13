@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BeParts = () => {
 	return (
-		<div className="jumbotron container be-parts bg-pry text-light text-center">
+		<div className="jumbotron container be-parts bg-pry text-light text-center mb-5">
 			<div className="col-md-8 mx-auto">
 				<h3>Be a part of this.</h3>
 				<p className="my-4">

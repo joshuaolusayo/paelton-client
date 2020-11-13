@@ -20,8 +20,8 @@ const Footer = () => {
 					</div>
 					<div className="col-lg-3 d-flex flex-column justify-content-between mt-5 mt-lg-0">
 						<h3 className="text-light">Quick Links</h3>
-						<Link to="/" className="text-muted mt-3">About SG Elton</Link>
-						<Link to="/" className="text-muted mt-3">Testimonials</Link>
+						<Link to="/about-elton" className="text-muted mt-3">About SG Elton</Link>
+						<Link to="/testimonials" className="text-muted mt-3">Testimonials</Link>
 						<Link to="/" className="text-muted mt-3">Resources</Link>
 						<Link to="/" className="text-muted mt-3">Donate</Link>
 					</div>

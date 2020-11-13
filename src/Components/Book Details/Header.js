@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ShowNav from "../Reusable Components/ShowNav";
 
 const Header = () => {
 	const [showNav, setShowNav] = useState(false);
@@ -26,22 +27,7 @@ const Header = () => {
 					</p>
 				</div>
 
-				<div className={`container bg-white text-pry p-abs ${showNav ? "d-block" : "d-none"}`}>
-					<button className="btn text-pry text-right w-100 mr-auto" id="cancel" onClick={() => setShowNav(false)}>
-						X
-					</button>
-					<div className="d-flex flex-column align-items-end top">
-						<Link className="my-3" to="/">
-							About SG Elton
-						</Link>
-						<Link className="my-3" to="/">
-							Testimonials
-						</Link>
-						<Link className="my-3" to="/">
-							Donate
-						</Link>
-					</div>
-				</div>
+				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
 		</header>
 	);
