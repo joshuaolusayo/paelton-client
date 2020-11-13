@@ -12,7 +12,7 @@ const Articles = () => {
 			<div className="row">
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/article-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light shadow h-100">
 							<img
 								className="card-img-top"
 								src="/assets/Herald of the last days. Vol. 1.jpg"
@@ -30,7 +30,7 @@ const Articles = () => {
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/article-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light shadow h-100">
 							<img
 								className="card-img-top"
 								src="/assets/Herald of the last days. Vol. 2.jpg"
@@ -48,7 +48,7 @@ const Articles = () => {
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/article-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light shadow h-100">
 							<img
 								className="card-img-top"
 								src="/assets/Herald of the last days. Vol. 3.jpg"

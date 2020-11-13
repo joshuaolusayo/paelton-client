@@ -159,6 +159,18 @@ body {
   transform: scale(1.05);
 }
 
+.hmpg .articles .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hmpg .audios .card-img-top {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
 .hmpg .left,
 .hmpg .right,
 .hmpg .pg {

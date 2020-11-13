@@ -159,6 +159,20 @@ body {
 				}
 			}
 		}
+
+		.card-img-top {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+		}
+	}
+
+	.audios {
+		.card-img-top {
+			width: 100%;
+			height: 120px;
+			object-fit: cover;
+		}
 	}
 
 	.left,
@@ -423,7 +437,7 @@ body {
 				@media screen and (min-width: 768px) {
 					top: 10px;
 				}
-				
+
 				@media screen and (min-width: 992px) {
 					top: 30px;
 				}
@@ -449,15 +463,15 @@ body {
 				transform: scale(1.05);
 			}
 		}
-		
+
 		.card {
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
 			border-radius: 10px;
-	
+
 			h3 {
 				font-size: 20px;
 			}
-	
+
 			.card-footer:last-child {
 				border-top: none;
 			}

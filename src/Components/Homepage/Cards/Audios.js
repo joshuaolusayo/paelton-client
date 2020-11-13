@@ -7,10 +7,10 @@ const Audios = () => {
 	});
 
 	return (
-		<div className="container">
+		<div className="container audios">
 			<div className="row">
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/understand_ye-the_kingdom_part_1.jpg"
@@ -39,7 +39,7 @@ const Audios = () => {
 					</div>
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/understand_ye-the_kingdom_part_2.jpg"
@@ -68,7 +68,7 @@ const Audios = () => {
 					</div>
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/My little children, love not the world.jpg"
@@ -97,7 +97,7 @@ const Audios = () => {
 					</div>
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/The coming kingdom and its glory. Part 1.jpg"
@@ -126,7 +126,7 @@ const Audios = () => {
 					</div>
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/The coming kingdom and its glory. Part 2.jpg"
@@ -155,7 +155,7 @@ const Audios = () => {
 					</div>
 				</div>
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
-					<div className="card bg-light shadow">
+					<div className="card bg-light shadow h-100">
 						<img
 							className="card-img-top"
 							src="/assets/What meant these sayings of the Lord.jpg"
