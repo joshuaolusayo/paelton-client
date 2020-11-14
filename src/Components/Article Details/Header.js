@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import ShowNav from "../Reusable Components/ShowNav";
+import AOS from "aos";
 
 const Header = () => {
 	const [showNav, setShowNav] = useState(false);
+
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	}, []);
+
 	return (
 		<header className="header w-100 h-100 bg-pry">
 			<div className="container text-light">
@@ -17,28 +24,13 @@ const Header = () => {
 				</nav>
 
 				<div className="abs d-flex flex-column justify-content-between h-50">
-					<h1 className="font-weight-bold mb-4">Herald of the last days. Vol. 2</h1>
-					<p>
+					<h1 className="font-weight-bold mb-4" data-aos="fade-down">Herald of the last days. Vol. 2</h1>
+					<p data-aos="fade-up">
 						<i className="fa fa-clock-o pr-3 text-light"></i> Reading time about 30 minutes
 					</p>
 				</div>
 
-				<div className={`container bg-white text-pry p-abs ${showNav ? "d-block" : "d-none"}`}>
-					<button className="btn text-pry text-right w-100 mr-auto" id="cancel" onClick={() => setShowNav(false)}>
-						X
-					</button>
-					<div className="d-flex flex-column align-items-end top">
-						<Link className="my-3" to="/">
-							About SG Elton
-						</Link>
-						<Link className="my-3" to="/">
-							Testimonials
-						</Link>
-						<Link className="my-3" to="/">
-							Donate
-						</Link>
-					</div>
-				</div>
+				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
 		</header>
 	);

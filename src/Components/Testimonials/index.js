@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import BeParts from "../Reusable Components/BePartOfThis";
-import Cards from "./Cards";
-import Profile from "./Profile";
-import Footer from "../Reusable Components/Footer";
 import Header from "./Header";
+import Testimonies from "./Testimonies";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 
-const Homepage = () => {
+const Testimonials = () => {
 	const { pathname } = useLocation();
 
 	useEffect(() => {
@@ -15,15 +12,12 @@ const Homepage = () => {
 	}, [pathname]);
 
 	return (
-		<div className="hmpg">
+		<div className="hmpg testimonials">
 			<Header />
-			<Cards />
-			<Profile />
-			<BeParts />
-			<Footer />
+			<Testimonies />
 			<ScrollToTop />
 		</div>
 	);
 };
 
-export default Homepage;
+export default Testimonials;
