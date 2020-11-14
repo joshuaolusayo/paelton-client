@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
 
 const Header = () => {
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
+
 	const [showNav, setShowNav] = useState(false);
 	return (
 		<header className="header w-100 h-100 bg-pry">
@@ -19,11 +24,11 @@ const Header = () => {
 
 				<div className="abs">
 					<div className="d-flex flex-column justify-content-start align-items-start col-md-8">
-						<h1 className="font-weight-bold">Revd. Emiko Amotsuka</h1>
-						<p className="my-3 my-md-3">
+						<h1 className="font-weight-bold" data-aos="fade-down">Revd. Emiko Amotsuka</h1>
+						<p className="my-3 my-md-3" data-aos="fade-up">
 							Former President, Ibadan Varsity Christian Union (IVCU, 1975/76), President Koinonia Ministries, Ibadan, Nigeria
 						</p>
-						<span>
+						<span data-aos="fade-up">
 							<i className="fa fa-clock-o"></i> 17 mins read
 						</span>
 					</div>
