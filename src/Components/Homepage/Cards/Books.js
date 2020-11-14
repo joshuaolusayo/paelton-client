@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 const Books = () => {
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
+
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
 						<div className="card bg-light shadow">
 							<img
@@ -17,7 +22,7 @@ const Books = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
 						<div className="card bg-light shadow">
 							<img
@@ -29,7 +34,7 @@ const Books = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5">
+				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
 						<div className="card bg-light shadow">
 							<img

@@ -12,9 +12,9 @@ const Header = () => {
 	return (
 		<header className="header w-100 h-100 bg-pry">
 			<div className="container text-light">
-				<nav className="d-flex justify-content-between align-itmes-center">
+				<nav className="d-flex justify-content-between align-items-center">
 					<Link to="/">
-						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" />
+						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 					</Link>
 
 					<button className="btn bg-transparent text-light">
@@ -22,14 +22,14 @@ const Header = () => {
 					</button>
 				</nav>
 
-				<div className="abs d-flex flex-column">
-					<h1 className="font-weight-bold mb-4" data-aos="fade-down">The Kingdom has come</h1>
-					<p data-aos="fade-up">
-						<i className="fa fa-child pr-3"></i>Ruth Elton
-					</p>
-					<p data-aos="fade-up">
-						<i className="fa fa-copy pr-3"></i>70 pages
-					</p>
+				<div className="abs">
+					<div className="d-flex flex-column justify-content-start align-items-start col-md-8">
+						<h1 className="font-weight-bold" data-aos="fade-down">Testimonials.</h1>
+						<p data-aos="fade-up">
+							Men of God speak about the influence of Pa S G Elton. (Excerpts from Essence Restored Magazine maiden edition
+							(2004))
+						</p>
+					</div>
 				</div>
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />
