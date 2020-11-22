@@ -6,7 +6,7 @@ const Login = () => {
 			<div className="row no-gutters">
 				<div className="col-sm-10 col-md-8 col-lg-5 col-xl-4 mx-auto d-flex flex-column  justify-content-center align-items-center">
 					<img src="/assets/sg_elton_white-06.png" alt="Pa SG Elton" />
-					<p className="text-light">Please, create your account.</p>
+					<p className="text-light">Please, login into your account.</p>
 					<form className="w-100" action="/" method="post">
 						<div class="form-group my-0">
 							<label for="Email address"></label>
