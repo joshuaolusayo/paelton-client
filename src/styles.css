@@ -451,3 +451,57 @@ body {
 .testimonials a .card .card-footer:last-child {
   border-top: none;
 }
+
+.auth .row {
+  min-height: 100vh;
+}
+
+.auth img {
+  width: 150px;
+  height: auto;
+}
+
+.auth p {
+  font-size: 20px;
+}
+
+.auth .form-group {
+  position: relative;
+}
+
+.auth .form-group input {
+  padding-left: 40px;
+}
+
+.auth .form-group input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.auth .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.auth .form-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth .form-group input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth .form-group i {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth button {
+  transition: all 300ms ease-in;
+}
+
+.auth button:hover {
+  transform: scale(0.98);
+}
