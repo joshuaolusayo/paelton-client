@@ -35,7 +35,8 @@ html {
 	color: $pry-color;
 
 	&:hover {
-		background: $pry-color;
+		// background: $pry-color;
+		background: #043575;
 		color: #fff;
 	}
 }
@@ -135,9 +136,10 @@ html {
 
 	.header {
 		background-size: cover;
+		height: 650px;
 
-		.container {
-			height: 600px;
+		.container-fluid {
+			height: 500px;
 
 			.abs {
 				position: relative;
@@ -169,65 +171,24 @@ html {
 			}
 		}
 
-		.p-abs {
-			position: absolute;
-			height: 600px;
-			right: 0;
-			top: 0;
-			width: 70%;
-			padding-right: 10%;
-
-			.top {
-				position: relative;
-				top: 80px;
-			}
-
-			@media screen and (min-width: 576px) {
-				width: 50%;
-			}
-
-			@media screen and (min-width: 992px) {
-				width: 35%;
-			}
-
-			#cancel {
-				font-size: 30px;
-				top: 10px;
-				position: relative;
-			}
-
-			a {
-				font-size: 20px;
-			}
+		.wave {
+			object-fit: cover;
+			object-position: center bottom;
 		}
 
-		&.style__header {
-			width: 30%;
-			background: $pry-color !important;
+		.style__header {
+			.p-abs {
+				height: 500px;
 
-			@media screen and (min-width: 576px) {
-				width: 50%;
-				padding-left: 5%;
-				padding-right: 5%;
-			}
+				.top {
+					position: relative;
+					top: 80px;
+				}
 
-			@media screen and (min-width: 992px) {
-				width: 65%;
-			}
-
-			h1 {
-				font-size: 25px;
-				@media screen and (min-width: 576px) {
-					font-size: 35px;
+				a {
+					font-size: 20px;
 				}
 			}
-
-			// &.hm .container {
-			// 	@media screen {
-			// 		height: 450px;
-			// 		margin-bottom: 100px;
-			// 	}
-			// }
 
 			.container .abs {
 				top: 50px;
@@ -433,6 +394,104 @@ html {
 }
 
 .header {
+	overflow-x: hidden;
+
+	.style__header {
+		position: relative;
+
+		.custom {
+			width: 30%;
+
+			@media screen and (min-width: 576px) {
+				width: 50%;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: 65%;
+			}
+		}
+
+		.custom,
+		.p-abs {
+			padding-right: 3%;
+
+			@media screen and (min-width: 576px) {
+				padding-right: 5%;
+			}
+
+			@media screen and (min-width: 768px) {
+				padding-right: 10%;
+			}
+
+			@media screen and (min-width: 1440px) {
+				padding-right: 15%;
+			}
+		}
+
+		.p-abs {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 70%;
+
+			@media screen and (min-width: 576px) {
+				width: 50%;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: 35%;
+			}
+
+			#cancel {
+				i {
+					font-size: 35px;
+				}
+
+				top: 15px;
+				position: relative;
+			}
+
+			a {
+				font-size: 20px;
+			}
+		}
+
+		h1 {
+			font-size: 25px;
+			@media screen and (min-width: 576px) {
+				font-size: 35px;
+			}
+		}
+
+		.container .abs {
+			top: 50px;
+		}
+
+		.abs.tt {
+			top: 20px;
+		}
+	}
+
+	.custom {
+		padding-left: 3%;
+		padding-right: 3%;
+
+		@media screen and (min-width: 576px) {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		@media screen and (min-width: 1440px) {
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+	}
+
 	.progress-container {
 		position: sticky;
 		z-index: 10;
@@ -462,17 +521,49 @@ html {
 	}
 }
 
+.about-elton {
+	.header {
+		.container-fluid .abs {
+			top: 50px;
+
+			@media screen and (min-width: 768px) {
+				top: 0;
+			}
+		}
+
+		.style__header .abs {
+			top: 30px;
+
+			@media screen and (min-width: 768px) {
+				top: 50px;
+			}
+		}
+	}
+}
+
+.testimonials,
+.article-details,
+.book-details {
+	.header {
+		.container-fluid .abs {
+			top: 30px;
+		}
+	}
+}
+
 .book-details,
 .article-details,
 .about-elton,
 .testimonials,
 .testimony-details {
 	.header {
-		.container {
-			height: 350px;
+		.style__header {
+			.p-abs {
+				height: 350px;
+			}
 		}
 
-		.p-abs {
+		.container-fluid {
 			height: 350px;
 		}
 	}

@@ -33,7 +33,7 @@ html {
 }
 
 .bg-outline-pry:hover {
-  background: #0053ac;
+  background: #043575;
   color: #fff;
 }
 
@@ -125,19 +125,20 @@ html {
 
 .hmpg .header {
   background-size: cover;
+  height: 650px;
 }
 
-.hmpg .header .container {
-  height: 600px;
+.hmpg .header .container-fluid {
+  height: 500px;
 }
 
-.hmpg .header .container .abs {
+.hmpg .header .container-fluid .abs {
   position: relative;
   top: 80px;
 }
 
 @media screen and (min-width: 768px) {
-  .hmpg .header .container .abs {
+  .hmpg .header .container-fluid .abs {
     top: 60px;
   }
 }
@@ -166,76 +167,29 @@ html {
   }
 }
 
-.hmpg .header .p-abs {
-  position: absolute;
-  height: 600px;
-  right: 0;
-  top: 0;
-  width: 70%;
-  padding-right: 10%;
+.hmpg .header .wave {
+  object-fit: cover;
+  object-position: center bottom;
 }
 
-.hmpg .header .p-abs .top {
+.hmpg .header .style__header .p-abs {
+  height: 500px;
+}
+
+.hmpg .header .style__header .p-abs .top {
   position: relative;
   top: 80px;
 }
 
-@media screen and (min-width: 576px) {
-  .hmpg .header .p-abs {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .hmpg .header .p-abs {
-    width: 35%;
-  }
-}
-
-.hmpg .header .p-abs #cancel {
-  font-size: 30px;
-  top: 10px;
-  position: relative;
-}
-
-.hmpg .header .p-abs a {
+.hmpg .header .style__header .p-abs a {
   font-size: 20px;
 }
 
-.hmpg .header.style__header {
-  width: 30%;
-  background: #0053ac !important;
-}
-
-@media screen and (min-width: 576px) {
-  .hmpg .header.style__header {
-    width: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .hmpg .header.style__header {
-    width: 65%;
-  }
-}
-
-.hmpg .header.style__header h1 {
-  font-size: 25px;
-}
-
-@media screen and (min-width: 576px) {
-  .hmpg .header.style__header h1 {
-    font-size: 35px;
-  }
-}
-
-.hmpg .header.style__header .container .abs {
+.hmpg .header .style__header .container .abs {
   top: 50px;
 }
 
-.hmpg .header.style__header .abs.tt {
+.hmpg .header .style__header .abs.tt {
   top: 20px;
 }
 
@@ -423,6 +377,132 @@ html {
   cursor: pointer;
 }
 
+.header {
+  overflow-x: hidden;
+}
+
+.header .style__header {
+  position: relative;
+}
+
+.header .style__header .custom {
+  width: 30%;
+}
+
+@media screen and (min-width: 576px) {
+  .header .style__header .custom {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .style__header .custom {
+    width: 65%;
+  }
+}
+
+.header .style__header .custom,
+.header .style__header .p-abs {
+  padding-right: 3%;
+}
+
+@media screen and (min-width: 576px) {
+  .header .style__header .custom,
+  .header .style__header .p-abs {
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .style__header .custom,
+  .header .style__header .p-abs {
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .style__header .custom,
+  .header .style__header .p-abs {
+    padding-right: 15%;
+  }
+}
+
+.header .style__header .p-abs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70%;
+}
+
+@media screen and (min-width: 576px) {
+  .header .style__header .p-abs {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header .style__header .p-abs {
+    width: 35%;
+  }
+}
+
+.header .style__header .p-abs #cancel {
+  top: 15px;
+  position: relative;
+}
+
+.header .style__header .p-abs #cancel i {
+  font-size: 35px;
+}
+
+.header .style__header .p-abs a {
+  font-size: 20px;
+}
+
+.header .style__header h1 {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 576px) {
+  .header .style__header h1 {
+    font-size: 35px;
+  }
+}
+
+.header .style__header .container .abs {
+  top: 50px;
+}
+
+.header .style__header .abs.tt {
+  top: 20px;
+}
+
+.header .custom {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+@media screen and (min-width: 576px) {
+  .header .custom {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .custom {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .custom {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
 .header .progress-container {
   position: sticky;
   z-index: 10;
@@ -449,19 +529,45 @@ html {
   height: 10px;
 }
 
-.book-details .header .container,
-.article-details .header .container,
-.about-elton .header .container,
-.testimonials .header .container,
-.testimony-details .header .container {
+.about-elton .header .container-fluid .abs {
+  top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-elton .header .container-fluid .abs {
+    top: 0;
+  }
+}
+
+.about-elton .header .style__header .abs {
+  top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-elton .header .style__header .abs {
+    top: 50px;
+  }
+}
+
+.testimonials .header .container-fluid .abs,
+.article-details .header .container-fluid .abs,
+.book-details .header .container-fluid .abs {
+  top: 30px;
+}
+
+.book-details .header .style__header .p-abs,
+.article-details .header .style__header .p-abs,
+.about-elton .header .style__header .p-abs,
+.testimonials .header .style__header .p-abs,
+.testimony-details .header .style__header .p-abs {
   height: 350px;
 }
 
-.book-details .header .p-abs,
-.article-details .header .p-abs,
-.about-elton .header .p-abs,
-.testimonials .header .p-abs,
-.testimony-details .header .p-abs {
+.book-details .header .container-fluid,
+.article-details .header .container-fluid,
+.about-elton .header .container-fluid,
+.testimonials .header .container-fluid,
+.testimony-details .header .container-fluid {
   height: 350px;
 }
 

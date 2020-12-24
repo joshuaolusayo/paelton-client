@@ -8,7 +8,7 @@ const Details = () => {
 	return (
 		<div className="container my-5 my-lg-8 details">
 			<div className="row justify-content-between align-items-start">
-				<div className="col-lg-5 col-xl-4">
+				<div className="col-md-5 col-xl-4">
 					{/* <div className="shadow rounded p-4 p-lg-5 content mb-5">
 						<h3 className="text-black font-weight-bold">Content</h3>
 						<div className="d-flex flex-column">
@@ -34,7 +34,7 @@ const Details = () => {
 					</div> */}
 					<Share />
 				</div>
-				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted">
+				<div className="col-md-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted">
 					<h3 className="text-black">What is God saying today?</h3>
 					<p>
 						<q className="font-italic">What the Spirit saith unto the churches</q> Rev. 2:7,11,19,29, Chap, 3: 6,13,22
