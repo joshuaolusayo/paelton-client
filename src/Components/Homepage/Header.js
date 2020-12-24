@@ -12,7 +12,7 @@ const Header = () => {
 
 	return (
 		<header
-			className="header w-100 h-100"
+			className={`header h-100 mb-5 ${showNav ? "style__header hm" : ""}`}
 			style={{
 				background: `#0053ac url("/assets/pattern/pattern_1.svg") no-repeat 50% 100%`,
 				backgroundSize: "cover",
@@ -24,18 +24,18 @@ const Header = () => {
 						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" />
 					</Link>
 
-					<button className="btn bg-transparent text-light">
-						<img className="hamburger" src="/assets/hamburger.png" alt="Navbar hamburger" onClick={() => setShowNav(true)} />
+					<button className={`btn bg-transparent ${!showNav ? "d-block" : "d-none"}`}>
+						<i className="fa fa-bars text-light hamburger" onClick={() => setShowNav(true)}></i>
 					</button>
 				</nav>
 
-				<div className="abs d-flex flex-column justify-content-center align-items-center">
-					<h1 className="font-weight-bold" data-aos="fade-down">
+				<div className={`abs d-flex flex-column justify-content-center ${showNav ? "align-items-start" : "align-items-center"}`}>
+					<h1 className={`font-weight-bold ${showNav ? "text-left" : ""}`} data-aos="fade-down">
 						Explore all the messages of S G Elton provided for free.
 					</h1>
-					<button className="btn bg-outline-pry px-5 py-2 shadow mt-3 mt-md-5" data-aos="fade-up">
+					<a href="#explore" className="btn bg-outline-pry px-5 py-2 shadow mt-3 mt-md-5" data-aos="fade-up">
 						Explore
-					</button>
+					</a>
 				</div>
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />

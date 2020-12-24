@@ -3,7 +3,7 @@ import Share from "../Reusable Components/Share";
 
 const Details = () => {
 	return (
-		<div className="container my-3 my-lg-5 details">
+		<div className="container my-5 my-lg-8 details">
 			<div className="row justify-content-between align-items-start">
 				<div className="col-lg-5 col-xl-4">
 					<Share />

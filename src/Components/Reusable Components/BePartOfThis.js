@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const BeParts = () => {
 	return (
-		<div className="jumbotron container be-parts bg-pry text-light text-center mb-5">
+		<div className="jumbotron container be-parts bg-pry text-light text-center my-5 my-md-8">
 			<div className="col-md-8 mx-auto">
 				<h3>Be a part of this.</h3>
-				<p className="my-4">
+				<p className="mt-4 mb-5">
 					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
 					layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
 					'Content here, content here', making it look like readable English.{" "}

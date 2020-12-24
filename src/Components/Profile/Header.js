@@ -12,7 +12,7 @@ const Header = () => {
 
 	return (
 		<header
-			className="header w-100 h-100"
+			className={`header h-100 ${showNav ? "style__header" : ""}`}
 			style={{ background: `#0053ac url("/assets/pattern/pattern_1.svg") no-repeat 50% 10%`, backgroundSize: "cover" }}
 		>
 			<div className="container text-light text-center">
@@ -21,8 +21,8 @@ const Header = () => {
 						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 					</Link>
 
-					<button className="btn bg-transparent text-light">
-						<img className="hamburger" src="/assets/hamburger.png" alt="Navbar hamburger" onClick={() => setShowNav(true)} />
+					<button className={`btn bg-transparent ${!showNav ? "d-block" : "d-none"}`}>
+						<i className="fa fa-bars text-light hamburger" onClick={() => setShowNav(true)}></i>
 					</button>
 				</nav>
 
@@ -33,7 +33,11 @@ const Header = () => {
 						</h1>
 						<p data-aos="fade-up">Written by Adeyemo Temidayo</p>
 					</div>
-					<img className="d-none d-md-block eltn rounded-circle" src="/assets/elton.png" alt="Pa Elton" />
+					<img
+						className={`d-none ${showNav ? "d-md-none" : "d-md-block"} eltn rounded-circle`}
+						src="/assets/elton.png"
+						alt="Pa Elton"
+					/>
 				</div>
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />

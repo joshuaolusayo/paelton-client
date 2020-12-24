@@ -9,21 +9,24 @@ const Header = () => {
 	useEffect(() => {
 		AOS.init({ duration: 600, once: true });
 	});
+
 	return (
-		<header className="header w-100 h-100 bg-pry">
+		<header className={`header h-100 bg-pry ${showNav ? "style__header" : ""}`}>
 			<div className="container text-light">
 				<nav className="d-flex justify-content-between align-itmes-center">
 					<Link to="/">
 						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" />
 					</Link>
 
-					<button className="btn bg-transparent text-light">
-						<img className="hamburger" src="/assets/hamburger.png" alt="Navbar hamburger" onClick={() => setShowNav(true)} />
+					<button className={`btn bg-transparent ${!showNav ? "d-block" : "d-none"}`}>
+						<i className="fa fa-bars text-light hamburger" onClick={() => setShowNav(true)}></i>
 					</button>
 				</nav>
 
 				<div className="abs d-flex flex-column">
-					<h1 className="font-weight-bold mb-4" data-aos="fade-down">The Kingdom has come</h1>
+					<h1 className="font-weight-bold mb-4" data-aos="fade-down">
+						The Kingdom has come
+					</h1>
 					<p data-aos="fade-up">
 						<i className="fa fa-child pr-3"></i>Ruth Elton
 					</p>

@@ -8,7 +8,7 @@ const Details = () => {
 	});
 
 	return (
-		<div className="container py-5 details">
+		<div className="container my-5 my-lg-8 details">
 			<div className="row align-items-end">
 				<div className="col-md-4 d-flex justify-content-center justify-content-md-auto">
 					<img className="book-img" src="/assets/the kingdom has come.jpg" alt="The kingdome has come" />

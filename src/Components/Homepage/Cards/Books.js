@@ -10,9 +10,9 @@ const Books = () => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
+				<div className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light border-0 shadow">
 							<img
 								className="card-img-top"
 								src="/assets/the battle for the nations-01.jpg"
@@ -22,9 +22,9 @@ const Books = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
+				<div className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light border-0 shadow">
 							<img
 								className="card-img-top"
 								src="/assets/the kingdom has come.jpg"
@@ -34,9 +34,9 @@ const Books = () => {
 						</div>
 					</Link>
 				</div>
-				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
+				<div className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/book-details">
-						<div className="card bg-light shadow">
+						<div className="card bg-light border-0 shadow">
 							<img
 								className="card-img-top"
 								src="/assets/we have come to mt zion.jpg"

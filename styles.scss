@@ -1,8 +1,9 @@
 $pry-color: #0053ac;
 $sec-color: #f88600;
 
-body {
-	font-family: "Circular Std Book";
+html {
+	scroll-behavior: smooth;
+	font-family: "DM Sans", sans-serif;
 }
 
 * {
@@ -43,6 +44,10 @@ body {
 	background: #000;
 }
 
+.bg-svg {
+	background: #fff4e7;
+}
+
 .text-black {
 	color: #000;
 }
@@ -51,12 +56,81 @@ body {
 	box-shadow: none;
 }
 
+.py- {
+	&6 {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	&lg-6 {
+		@media screen and (min-width: 992px) {
+			padding-top: 6rem !important;
+			padding-bottom: 6rem !important;
+		}
+	}
+}
+
+.my- {
+	&6 {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
+
+	&md-6 {
+		@media screen and (min-width: 768px) {
+			margin-top: 6rem !important;
+			margin-bottom: 6rem !important;
+		}
+	}
+
+	&lg-6 {
+		@media screen and (min-width: 992px) {
+			margin-top: 6rem !important;
+			margin-bottom: 6rem !important;
+		}
+	}
+}
+
+.my- {
+	&8 {
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
+
+	&md-8 {
+		@media screen and (min-width: 768px) {
+			margin-top: 8rem !important;
+			margin-bottom: 8rem !important;
+		}
+	}
+
+	&lg-8 {
+		@media screen and (min-width: 992px) {
+			margin-top: 8rem !important;
+			margin-bottom: 8rem !important;
+		}
+	}
+}
+
+.nav {
+	a {
+		position: relative;
+		transition: all 500ms ease;
+
+		&:hover {
+			text-decoration: none;
+			color: $pry-color !important;
+			right: 10px;
+		}
+	}
+}
+
 .hmpg {
 	position: relative;
 
 	.elt {
-		width: 58px;
-		height: 78px;
+		width: auto;
+		height: 50px;
 	}
 
 	.header {
@@ -76,9 +150,10 @@ body {
 		}
 
 		nav {
+			padding: 20px 0;
+
 			.hamburger {
-				width: 24px;
-				height: 24px;
+				font-size: 35px;
 			}
 		}
 
@@ -125,11 +200,52 @@ body {
 				font-size: 20px;
 			}
 		}
+
+		&.style__header {
+			width: 30%;
+			background: $pry-color !important;
+
+			@media screen and (min-width: 576px) {
+				width: 50%;
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: 65%;
+			}
+
+			h1 {
+				font-size: 25px;
+				@media screen and (min-width: 576px) {
+					font-size: 35px;
+				}
+			}
+
+			// &.hm .container {
+			// 	@media screen {
+			// 		height: 450px;
+			// 		margin-bottom: 100px;
+			// 	}
+			// }
+
+			.container .abs {
+				top: 50px;
+			}
+
+			.abs.tt {
+				top: 20px;
+			}
+		}
 	}
 
 	.cards {
 		#cards-tab {
-			border-bottom: 3px solid #c4c4c4;
+			border-bottom: 1px solid #c4c4c4;
+		}
+
+		.card-body {
+			background-color: #fff !important;
 		}
 
 		.audio {
@@ -139,6 +255,16 @@ body {
 			}
 		}
 
+		.show__arrow {
+			display: inline-block;
+			vertical-align: middle;
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid $sec-color;
+		}
+
 		.dwn {
 			transition: all 300ms ease-out;
 			font-size: 14px;
@@ -146,6 +272,14 @@ body {
 			&:hover {
 				background-color: #00448c;
 			}
+		}
+
+		.opacity-0 {
+			opacity: 0;
+		}
+
+		.opacity-1 {
+			opacity: 1;
 		}
 	}
 
@@ -173,33 +307,43 @@ body {
 			height: 120px;
 			object-fit: cover;
 		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
-	.left,
-	.right,
+	.prev,
+	.next,
 	.pg {
 		font-size: 14px;
 		line-height: 14px;
 		text-align: center;
 	}
 
-	.left,
-	.right {
+	.prev,
+	.next {
 		width: 45px;
 		height: 45px;
 		border: 1px solid gray;
 
-		&.border-sec {
+		&:hover {
 			border-color: $sec-color !important;
+
+			i {
+				color: $sec-color !important;
+			}
 		}
 	}
 
 	.pg {
 		width: 30px;
 		height: 30px;
+		border-radius: 50%;
 
 		&:hover {
-			border-radius: 50%;
 			border: 1px solid $sec-color;
 		}
 
@@ -211,16 +355,17 @@ body {
 	}
 
 	.profile {
-		height: 500px;
+		// height: 500px;
 		background-position: 0% 0% !important;
 
 		@media screen and (min-width: 768px) {
-			height: 500px;
+			// height: 500px;
 			background-position: 50% 20% !important;
 		}
 
 		.read-more {
 			&:hover {
+				background: #f8860040 !important;
 				color: #000 !important;
 			}
 		}
@@ -258,6 +403,12 @@ body {
 		}
 	}
 
+	.profile__elton {
+		.wave {
+			height: 100px;
+		}
+	}
+
 	.be-parts {
 		border-radius: 20px;
 
@@ -275,6 +426,40 @@ body {
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.header {
+	.progress-container {
+		position: sticky;
+		z-index: 10;
+		background: #ccc;
+		width: 100%;
+
+		.progress-bar {
+			background: $sec-color;
+			transform-origin: top left;
+			transform: scale(0, 0);
+			opacity: 0;
+		}
+
+		&.sticky {
+			.progress-bar {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+
+		.progress-container,
+		.progress-bar {
+			height: 10px;
+		}
+	}
 }
 
 .book-details,
@@ -368,14 +553,14 @@ body {
 
 		.other-articles {
 			.border-bottom {
-				border-bottom: 3px solid $sec-color !important;
+				border-bottom: 1px solid $sec-color !important;
 			}
 		}
 	}
 }
 
 .share {
-	background-color: #f4f8fb;
+	background-color: #fff;
 
 	a {
 		width: 35px;
@@ -525,12 +710,21 @@ body {
 			color: rgba(255, 255, 255, 0.7);
 		}
 	}
-	
+
 	button {
 		transition: all 300ms ease-in;
 
 		&:hover {
 			transform: scale(0.98);
+		}
+	}
+}
+
+.footer {
+	a {
+		&:hover {
+			color: #fff !important;
+			text-decoration: none;
 		}
 	}
 }

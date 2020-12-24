@@ -10,21 +10,23 @@ const Header = () => {
 
 	const [showNav, setShowNav] = useState(false);
 	return (
-		<header className="header w-100 h-100 bg-pry">
+		<header className={`header h-100 bg-pry ${showNav ? "style__header" : ""}`}>
 			<div className="container text-light">
 				<nav className="d-flex justify-content-between align-items-center">
 					<Link to="/">
 						<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 					</Link>
 
-					<button className="btn bg-transparent text-light">
-						<img className="hamburger" src="/assets/hamburger.png" alt="Navbar hamburger" onClick={() => setShowNav(true)} />
+					<button className={`btn bg-transparent ${!showNav ? "d-block" : "d-none"}`}>
+						<i className="fa fa-bars text-light hamburger" onClick={() => setShowNav(true)}></i>
 					</button>
 				</nav>
 
 				<div className="abs">
 					<div className="d-flex flex-column justify-content-start align-items-start col-md-8">
-						<h1 className="font-weight-bold" data-aos="fade-down">Revd. Emiko Amotsuka</h1>
+						<h1 className="font-weight-bold" data-aos="fade-down">
+							Revd. Emiko Amotsuka
+						</h1>
 						<p className="my-3 my-md-3" data-aos="fade-up">
 							Former President, Ibadan Varsity Christian Union (IVCU, 1975/76), President Koinonia Ministries, Ibadan, Nigeria
 						</p>

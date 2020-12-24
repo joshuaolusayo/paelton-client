@@ -1,14 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Articles from "../Homepage/Cards/Articles";
 import Share from "../Reusable Components/Share";
+// import ProgressBar from "../Reusable Components/ProgressBar";
 
 const Details = () => {
 	return (
-		<div className="container my-3 my-lg-5 details">
+		<div className="container my-5 my-lg-8 details">
 			<div className="row justify-content-between align-items-start">
 				<div className="col-lg-5 col-xl-4">
-					<div className="shadow rounded p-4 p-lg-5 content mb-5">
+					{/* <div className="shadow rounded p-4 p-lg-5 content mb-5">
 						<h3 className="text-black font-weight-bold">Content</h3>
 						<div className="d-flex flex-column">
 							<Link className="text-sec mb-3 active" to="#">
@@ -30,7 +31,7 @@ const Details = () => {
 								Now is the time for action
 							</Link>
 						</div>
-					</div>
+					</div> */}
 					<Share />
 				</div>
 				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted">
@@ -82,7 +83,7 @@ const Details = () => {
 					</p>
 				</div>
 			</div>
-			<div className="row my-5 other-articles">
+			<div className="row my-5 my-md-6 my-lg-8 other-articles">
 				<div className="col-12 border-bottom mb-5">
 					<h3 className="font-weight-bold">Other articles</h3>
 				</div>

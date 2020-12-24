@@ -8,8 +8,8 @@ const Testimonies = () => {
 	}, []);
 
 	return (
-		<div className="container my-5 testimonials">
-			<h1 className="font-weight-bold mb-3 mb-lg-4 text-center">Testimonials</h1>
+		<div className="container my-5 my-md-8 testimonials">
+			<h1 className="font-weight-bold mb-4 mb-lg-5 text-center">Testimonials</h1>
 			<div className="row">
 				<div className="col-md-6 col-lg-4 mb-4 mb-lg-5" data-aos="fade-up">
 					<Link to="/testimony-details">
