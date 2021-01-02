@@ -11,7 +11,7 @@ const Header = () => {
 	});
 
 	return (
-		<header className="header mb-5">
+		<header className="header mb-md-5">
 			<div className={`container-fluid px-0 text-light text-center bg-pry ${showNav ? "style__header hm" : ""}`}>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-itmes-center">
@@ -25,7 +25,9 @@ const Header = () => {
 					</nav>
 
 					<div
-						className={`abs d-flex flex-column justify-content-center ${showNav ? "align-items-start" : "align-items-center"}`}
+						className={`abs ${showNav ? "" : "col-lg-10 col-xl-8 mx-lg-auto"} d-flex flex-column justify-content-center ${
+							showNav ? "align-items-start" : "align-items-center"
+						}`}
 					>
 						<h1 className={`font-weight-bold ${showNav ? "text-left" : ""}`} data-aos="fade-down">
 							Explore all the messages of S G Elton provided for free.

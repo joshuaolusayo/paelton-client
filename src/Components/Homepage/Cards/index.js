@@ -42,7 +42,7 @@ const Cards = () => {
 					<i className={`show__arrow ${display === "books" ? "opacity-1" : "opacity-0"}`}></i>
 				</div>
 			</div>
-			{display === "audios" ? <Audios /> : display === "articles" ? <Articles /> : display === "books" ? <Books /> : null};
+			{display === "audios" ? <Audios /> : display === "articles" ? <Articles /> : display === "books" ? <Books /> : null}
 			<div className="container">
 				<div className="row flex-column align-items-center justify-content-center">
 					<div className="pagination d-flex justiyf-content-center align-items-center mb-4">

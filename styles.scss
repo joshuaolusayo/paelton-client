@@ -138,6 +138,14 @@ html {
 		background-size: cover;
 		height: 650px;
 
+		@media screen and (min-width: 1600px) {
+			height: 750px;
+		}
+		
+		@media screen and (min-width: 2000px) {
+			height: 800px;
+		}
+
 		.container-fluid {
 			height: 500px;
 
@@ -216,6 +224,20 @@ html {
 			}
 		}
 
+		.seek {
+			height: 2px;
+			width: 50px;
+
+			@media screen and (min-width: 400px) {
+				width: 100px;
+			}
+
+			.fill {
+				background: $sec-color;
+				height: 2px;
+			}
+		}
+
 		.show__arrow {
 			display: inline-block;
 			vertical-align: middle;
@@ -273,6 +295,44 @@ html {
 			&:hover {
 				text-decoration: none;
 			}
+		}
+
+		.rhap_container {
+			border: none;
+			padding: 0;
+			background: transparent;
+			box-shadow: none;
+
+			svg {
+				color: rgba(0,0,0,0.7);
+				width: .8em;
+				height: .8em;
+			}
+
+			.rhap_additional-controls, .rhap_volume-controls {
+				display: none;
+			}
+
+			.rhap_controls-section {
+				flex: 0 1 auto;
+				margin-right: 0;
+			}
+
+			.rhap_progress-indicator {
+				width: 12px;
+				height: 12px;
+				top: -4px;
+			}
+
+			.rhap_play-pause-button {
+				font-size: 35px;
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		.rhap_container, .rhap_container *:focus {
+			outline: none;
 		}
 	}
 
@@ -543,7 +603,8 @@ html {
 
 .testimonials,
 .article-details,
-.book-details {
+.book-details,
+.testimony-details {
 	.header {
 		.container-fluid .abs {
 			top: 30px;

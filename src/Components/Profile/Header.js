@@ -19,7 +19,7 @@ const Header = () => {
 							<img className="elt" src="/assets/sg_elton_white-06.png" alt="Pa S G Elton" loading="lazy" />
 						</Link>
 
-						<button className={`btn bg-transparent ${!showNav ? "d-block" : "d-none"}`}>
+						<button className={`btn bg-transparent px-0 ${!showNav ? "d-block" : "d-none"}`}>
 							<i className="fa fa-bars text-light hamburger" onClick={() => setShowNav(true)}></i>
 						</button>
 					</nav>
