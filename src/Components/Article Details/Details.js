@@ -3,6 +3,8 @@ import React from "react";
 import Articles from "../Homepage/Cards/Articles";
 import Share from "../Reusable Components/Share";
 // import ProgressBar from "../Reusable Components/ProgressBar";
+import { useParams } from "react-router";
+import {fetchArticle} from "../../actions/articles"
 
 const Details = () => {
 	return (

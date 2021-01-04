@@ -141,7 +141,7 @@ html {
 		@media screen and (min-width: 1600px) {
 			height: 750px;
 		}
-		
+
 		@media screen and (min-width: 2000px) {
 			height: 800px;
 		}
@@ -282,6 +282,10 @@ html {
 			height: 220px;
 			object-fit: cover;
 		}
+
+		.card-text {
+			font-size: 14px;
+		}
 	}
 
 	.audios {
@@ -304,12 +308,13 @@ html {
 			box-shadow: none;
 
 			svg {
-				color: rgba(0,0,0,0.7);
-				width: .8em;
-				height: .8em;
+				color: rgba(0, 0, 0, 0.7);
+				width: 0.8em;
+				height: 0.8em;
 			}
 
-			.rhap_additional-controls, .rhap_volume-controls {
+			.rhap_additional-controls,
+			.rhap_volume-controls {
 				display: none;
 			}
 
@@ -331,7 +336,8 @@ html {
 			}
 		}
 
-		.rhap_container, .rhap_container *:focus {
+		.rhap_container,
+		.rhap_container *:focus {
 			outline: none;
 		}
 	}
@@ -877,6 +883,36 @@ html {
 		&:hover {
 			color: #fff !important;
 			text-decoration: none;
+		}
+	}
+}
+
+.pagination {
+	justify-content: center;
+	margin-top: 30px;
+
+	li {
+		margin: 0 10px;
+
+		a {
+			color: $sec-color;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: inline-block;
+			line-height: 30px;
+			text-align: center;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&.active {
+			a {
+				background: $sec-color;
+				color: #fff;
+			}
 		}
 	}
 }

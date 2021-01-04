@@ -5,6 +5,7 @@ import Books from "./Books";
 
 const Cards = () => {
 	const [display, setDisplay] = useState("audios");
+	
 	return (
 		<div id="explore" className="container-fluid cards">
 			<div className="container d-flex justify-content-center mb-4 pt-2 rounded" id="cards-tab">
@@ -43,7 +44,7 @@ const Cards = () => {
 				</div>
 			</div>
 			{display === "audios" ? <Audios /> : display === "articles" ? <Articles /> : display === "books" ? <Books /> : null}
-			<div className="container">
+			{/* <div className="container">
 				<div className="row flex-column align-items-center justify-content-center">
 					<div className="pagination d-flex justiyf-content-center align-items-center mb-4">
 						<span className="rounded-circle prev p-3 mr-3">
@@ -62,7 +63,7 @@ const Cards = () => {
 					</div>
 					<p className="text-black">1-9 of 90 resources</p>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

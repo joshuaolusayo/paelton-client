@@ -12,7 +12,7 @@ const BeParts = () => {
 					'Content here, content here', making it look like readable English.{" "}
 				</p>
 				<Link to="/">
-					<button className="btn px-5 py-2 shadow bg-outline-pry">Give to the course</button>
+					<button className="btn px-5 py-2 shadow bg-outline-pry">Give to the cause</button>
 				</Link>
 			</div>
 		</div>
