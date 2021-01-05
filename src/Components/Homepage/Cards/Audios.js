@@ -37,6 +37,7 @@ const Audios = (props) => {
 		setCurrentPage(pageNum);
 	};
 
+	console.log(props);
 	// return !loading && props.audios.data.length ? (
 	return !loading && data.length ? (
 		<div className="container audios">
@@ -84,7 +85,9 @@ const Audios = (props) => {
 			/>
 
 			<div className="text-center mt-4">
-				<span className="text-small">{`${indexOfFirstToDo + 1} - ${indexOfLastToDo} of ${props.audios.data.length} resources`}</span>
+				<span className="text-small">{`${indexOfFirstToDo + 1} - ${indexOfLastToDo} of ${
+					props.audios.data.data.length
+				} resources`}</span>
 			</div>
 		</div>
 	) : (
