@@ -33,11 +33,9 @@ const Articles = (props) => {
 		setCurrentPage(pageNum);
 	};
 
-	// return !loading && props.articles.data.data.length ? (
 	return !loading && data.length ? (
 		<div className="container articles">
 			<div className="row">
-				{/* {props.articles.data.data.map((article) => { */}
 				{data.map((article) => {
 					return (
 						<div className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up" key={article._id}>

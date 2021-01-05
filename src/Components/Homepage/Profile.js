@@ -13,10 +13,7 @@ const Profile = () => {
 	return (
 		<div className="profile__elton my-5 my-lg-8">
 			<img className="w-100 wave d-none d-md-inline-block" src="./assets/wave1.png" alt="Wave" />
-			<div
-				className="container-fluid bg-svg mx-0 py-5 py-md-0 my-5 my-md-0 d-flex justify-content-center align-items-center profile"
-				// style={{ background: `url(/assets/pattern/pattern_2.svg) no-repeat 50% 20%`, backgroundSize: "cover" }}
-			>
+			<div className="container-fluid bg-svg mx-0 py-5 py-md-0 my-5 my-md-0 d-flex justify-content-center align-items-center profile">
 				<div className="container" data-aos="zoom-in">
 					<div className="row align-items-center py-3">
 						<div className="col-lg-6">

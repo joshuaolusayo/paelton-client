@@ -22,10 +22,7 @@ const Testimonies = (props) => {
 										<h3 className="pl-2 font-weight-bold text-black">{testimony.name}</h3>
 									</div>
 									<div className="card-body pb-0">
-										<div className="card-text text-muted">
-											{ReactHtmlParser(testimony.testimony)}
-											{/* {testimony.testimony} */}
-										</div>
+										<div className="card-text text-muted">{ReactHtmlParser(testimony.testimony)}</div>
 									</div>
 									<div className="card-footer text-muted bg-transparent">
 										<span>

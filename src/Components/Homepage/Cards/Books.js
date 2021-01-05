@@ -59,7 +59,9 @@ const Books = (props) => {
 			/>
 
 			<div className="text-center mt-4">
-				<span className="text-small">{`${indexOfFirstToDo + 1} - ${indexOfLastToDo} of ${props.books.data.data.length} resources`}</span>
+				<span className="text-small">{`${indexOfFirstToDo + 1} - ${indexOfLastToDo} of ${
+					props.books.data.data.length
+				} resources`}</span>
 			</div>
 		</div>
 	) : (

@@ -12,16 +12,16 @@ const ShowNav = ({ showNav, setShowNav }) => {
 				<i className="fa fa-times text-pry"></i>
 			</button>
 			<div className="d-flex flex-column align-items-end top">
-				<Link className="my-3" to="/">
+				<Link className="my-3 text-pry" to="/">
 					Home
 				</Link>
-				<Link className="my-3" to="/about-elton">
+				<Link className="my-3 text-pry" to="/about-elton">
 					About SG Elton
 				</Link>
-				<Link className="my-3" to="/testimonials">
+				<Link className="my-3 text-pry" to="/testimonials">
 					Testimonials
 				</Link>
-				<Link className="my-3" to="/">
+				<Link className="my-3 text-pry" to="/">
 					Donate
 				</Link>
 			</div>

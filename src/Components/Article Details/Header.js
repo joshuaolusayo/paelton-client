@@ -39,7 +39,7 @@ const Header = (props) => {
 		</header>
 	) : (
 		<div className="my-5 text-center lead">Loading...</div>
-	)
+	);
 };
 
 export default Header;

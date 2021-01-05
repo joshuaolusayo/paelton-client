@@ -14,7 +14,6 @@ import "aos/dist/aos.css";
 import "./styles.css";
 
 // Redux setup
-
 import { Provider } from "react-redux";
 import store from "./store";
 

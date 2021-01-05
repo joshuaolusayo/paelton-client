@@ -37,11 +37,9 @@ const Audios = (props) => {
 		setCurrentPage(pageNum);
 	};
 
-	// return !loading && props.audios.data.length ? (
 	return !loading && data.length ? (
 		<div className="container audios">
 			<div className="row">
-				{/* {props.audios.data.map((audio) => { */}
 				{data.map((audio) => {
 					return (
 						<div key={audio._id} className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">

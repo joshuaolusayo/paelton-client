@@ -21,7 +21,6 @@ const ArticleDetails = (props) => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [pathname, loading]);
 
-	// console.log(props);
 	return !loading ? (
 		<div className="hmpg article-details">
 			<Header data={props.article.data.data} />
