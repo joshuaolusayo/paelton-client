@@ -37,7 +37,6 @@ const Audios = (props) => {
 		setCurrentPage(pageNum);
 	};
 
-	console.log(props);
 	// return !loading && props.audios.data.length ? (
 	return !loading && data.length ? (
 		<div className="container audios">
