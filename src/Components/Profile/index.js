@@ -1,23 +1,32 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
 import Header from "./Header";
 
 const PaEltonProfile = () => {
-    const { pathname } = useLocation();
+	const { pathname } = useLocation();
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-    }, [pathname]);
-    
+	}, [pathname]);
+
 	return (
 		<div className="hmpg about-elton">
-			<Header />
-			<Details />
-			<Footer />
-			<ScrollToTop />
+			<HelmetProvider>
+				<Helmet>
+					<title>About S G Elton</title>
+					<meta name="description" content="About S G Elton" />
+					<meta name="author" content="Ennovate Lab" />
+					<meta name="keywords" content="S G Elton, About S G Elton, S G Elton Legacy's website" />
+				</Helmet>
+				<Header />
+				<Details />
+				<Footer />
+				<ScrollToTop />
+			</HelmetProvider>
 		</div>
 	);
 };

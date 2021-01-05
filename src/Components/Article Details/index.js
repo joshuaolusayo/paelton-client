@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
@@ -23,10 +24,21 @@ const ArticleDetails = (props) => {
 
 	return !loading ? (
 		<div className="hmpg article-details">
-			<Header data={props.article.data.data} />
-			<Details data={props.article.data.data} />
-			<Footer />
-			<ScrollToTop />
+			<HelmetProvider>
+				<Helmet>
+					<title>{props.article.data.data.title}</title>
+					<meta name="description" content="Article" />
+					<meta name="author" content="Ennovate Lab" />
+					<meta
+						name="keywords"
+						content={`Articles, Testimonies about S G Elton, ${props.article.data.data.title}`}
+					/>
+				</Helmet>
+				<Header data={props.article.data.data} />
+				<Details data={props.article.data.data} />
+				<Footer />
+				<ScrollToTop />
+			</HelmetProvider>
 		</div>
 	) : (
 		<div className="my-5 text-center lead">Loading...</div>

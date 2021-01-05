@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "./Header";
 import Testimonies from "./Testimonies";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
@@ -19,10 +20,18 @@ const Testimonials = (props) => {
 
 	return !loading ? (
 		<div className="hmpg testimonials">
-			<Header />
-			<Testimonies allTestimonies={props.testimonials.data.data} />
-			<Footer />
-			<ScrollToTop />
+			<HelmetProvider>
+				<Helmet>
+					<title>Testimonials</title>
+					<meta name="description" content="Testimonials" />
+					<meta name="author" content="Ennovate Lab" />
+					<meta name="keywords" content="Testimonials, S G Elton Testimonials, Testimonies about S G Elton" />
+				</Helmet>
+				<Header />
+				<Testimonies allTestimonies={props.testimonials.data.data} />
+				<Footer />
+				<ScrollToTop />
+			</HelmetProvider>
 		</div>
 	) : (
 		<div className="my-5 text-center lead">Loading...</div>

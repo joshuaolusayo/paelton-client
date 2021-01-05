@@ -280,15 +280,6 @@ p {
 			border-top: 10px solid $sec-color;
 		}
 
-		.dwn {
-			transition: all 300ms ease-out;
-			font-size: 14px;
-
-			&:hover {
-				background-color: $sec-color;
-			}
-		}
-
 		.opacity-0 {
 			opacity: 0;
 		}
@@ -474,6 +465,15 @@ p {
 		@media screen and (min-width: 768px) {
 			margin-top: 80px;
 		}
+	}
+}
+
+.dwn {
+	transition: all 200ms ease-out;
+	font-size: 14px;
+
+	&:hover {
+		background-color: $sec-color;
 	}
 }
 
@@ -748,14 +748,14 @@ p {
 .share {
 	background-color: #fff;
 
-	a {
+	div {
 		width: 35px;
 		height: 35px;
 		line-height: 35px;
 		text-align: center;
 
-		&#in {
-			background-color: #ff1887;
+		&#ln {
+			background-color: #0e76a8;
 		}
 
 		&#fb {
@@ -770,9 +770,15 @@ p {
 			background-color: #77dfb3;
 		}
 
-		&:hover {
-			color: #fff;
-			transform: scale(1.1);
+		button {
+			&:hover {
+				color: #fff !important;
+				transform: scale(1.1);
+			}
+
+			&:focus {
+				outline: none;
+			}
 		}
 	}
 }

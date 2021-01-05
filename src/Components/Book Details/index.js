@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
@@ -21,13 +22,20 @@ const BookDetails = (props) => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [pathname, loading]);
 
-	console.log(props);
 	return !loading ? (
 		<div className="hmpg book-details">
-			<Header data={props.book.data.data} />
-			<Details data={props.book.data.data} />
-			<Footer />
-			<ScrollToTop />
+			<HelmetProvider>
+				<Helmet>
+					<title>{props.book.data.data.title}</title>
+					<meta name="description" content={`${props.book.data.data.title} written by S G Elton`} />
+					<meta name="author" content="Ennovate Lab" />
+					<meta name="keywords" content={`Books, S G Elton books, ${props.book.data.data.title}`} />
+				</Helmet>
+				<Header data={props.book.data.data} />
+				<Details data={props.book.data.data} />
+				<Footer />
+				<ScrollToTop />
+			</HelmetProvider>
 		</div>
 	) : (
 		<div className="my-5 text-center lead">Loading...</div>

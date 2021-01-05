@@ -10,7 +10,6 @@ const Header = (props) => {
 		AOS.init({ duration: 600, once: true });
 	});
 
-	console.log(props);
 	return props.data ? (
 		<header className={`header h-100 bg-pry `}>
 			<div className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}>

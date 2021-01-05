@@ -6,7 +6,14 @@ const Details = () => {
 		<div className="container my-5 my-lg-8 details">
 			<div className="row justify-content-between align-items-start">
 				<div className="col-lg-5 col-xl-4">
-					<Share />
+					<Share
+						tag="SGElton"
+						title="About S G Elton"
+						intro="Pa Elton, as he was popularly called, left his native country, England, to come to Ilesha, Nigeria in March 1937 in
+						response to a divine call to be a missionary; his wife and only child, 3-year old Ruth, joining him about six months
+						later..."
+						img="/assets/elton.png"
+					/>
 				</div>
 				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted">
 					<p>
