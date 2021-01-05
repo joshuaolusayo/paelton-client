@@ -11,8 +11,11 @@ const Header = () => {
 	});
 
 	return (
-		<header className="header mb-md-5">
-			<div className={`container-fluid px-0 text-light text-center bg-pry ${showNav ? "style__header hm" : ""}`}>
+		<header className="header mb-5">
+			<div
+				className={`container-fluid px-0 text-light text-center ${showNav ? "style__header hm" : ""}`}
+				style={{ background: "url('/assets/pattern_2.png')" }}
+			>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-itmes-center">
 						<Link to="/">
@@ -40,7 +43,11 @@ const Header = () => {
 
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
-			<img className={`wave w-100 mt-n1 ${showNav ? "d-none" : "d-inline-block"}`} src="./assets/bg_wave.png" alt="Wave" />
+			{/* {!showNav ? (
+				<img className={`wave w-100 mt-n1 ${showNav ? "d-none" : "d-inline-block"}`} src="./assets/bg_wave.png" alt="Wave" />
+			) : (
+				<div className="wave bg-pry"></div>
+			)} */}
 		</header>
 	);
 };

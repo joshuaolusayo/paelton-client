@@ -7,6 +7,7 @@ import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 import Pagination from "react-js-pagination";
+import ReactHtmlParser from "react-html-parser";
 
 const Audios = (props) => {
 	const [loading, setLoading] = useState(true);
@@ -47,9 +48,9 @@ const Audios = (props) => {
 							<div className="card bg-light border-0 shadow h-100">
 								<div className="card-body p-4">
 									<h4 className="card-title font-weight-bold">{audio.title}</h4>
-									<p className="card-text">{audio.text}</p>
+									<div className="card-text">{ReactHtmlParser(audio.description)}</div>
 									<div className="d-flex justify-content-between align-items-center">
-										<a href={audio.audio} download={audio.title}>
+										<a href={audio.link} download={audio.title}>
 											<button className="btn bg-pry text-light d-flex dwn">
 												Download&nbsp;
 												<span>
@@ -58,7 +59,7 @@ const Audios = (props) => {
 											</button>
 										</a>
 										<AudioPlayer
-											src={audio.audio}
+											src={audio.link}
 											layout="horizontal-reverse"
 											showJumpControls={false}
 											showFilledVolume={false}
@@ -87,7 +88,7 @@ const Audios = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center">Loading...</div>
+		<div className="my-5 text-center lead">Loading...</div>
 	);
 };
 

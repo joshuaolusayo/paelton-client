@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export const getAllArticles = () => async (dispatch) => {
-	// const fetch = await axios.get("https://paelton-api.herokuapp.com/api/v1/articles");
-	const fetch = await axios.get(`/data/articles.json`);
+	const fetch = await axios.get("https://paelton-api.herokuapp.com/api/v1/articles");
+	// const fetch = await axios.get(`/data/articles.json`);
 	return dispatch({
 		type: "GET_ALL",
 		payload: fetch.data,

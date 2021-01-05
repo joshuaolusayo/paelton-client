@@ -72,7 +72,7 @@ const Articles = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading</div>
+		<div className="my-5 text-center lead">Loading...</div>
 	);
 };
 

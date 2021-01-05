@@ -24,7 +24,7 @@ const Header = () => {
 						</button>
 					</nav>
 
-					<div className="abs d-flex flex-column">
+					<div className="abs d-flex flex-column justify-content-center">
 						<h1 className="font-weight-bold mb-4" data-aos="fade-down">
 							The Kingdom has come
 						</h1>

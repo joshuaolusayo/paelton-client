@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
 import AOS from "aos";
 
-const Header = () => {
+const Header = (props) => {
 	const [showNav, setShowNav] = useState(false);
 
 	useEffect(() => {
 		AOS.init({ duration: 600, once: true });
 	}, []);
 
-	return (
+	return props.data ? (
 		<header className={`header h-100 bg-pry `}>
 			<div className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}>
 				<div className="custom">
@@ -26,7 +26,7 @@ const Header = () => {
 
 					<div className="abs d-flex flex-column h-50">
 						<h1 className="font-weight-bold mb-4" data-aos="fade-down">
-							Herald of the last days. Vol. 2
+							{props.data.title}
 						</h1>
 						<p className={`${showNav ? "d-none d-md-block" : "d-block"}`} data-aos="fade-up">
 							<i className="fa fa-clock-o pr-3 text-light"></i> Reading time about 30 minutes
@@ -37,7 +37,9 @@ const Header = () => {
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
 		</header>
-	);
+	) : (
+		<div className="my-5 text-center lead">Loading...</div>
+	)
 };
 
 export default Header;

@@ -27,7 +27,7 @@ ReactDOM.render(
 				<Route exact path="/article-details/:id" component={ArticleDetails} />
 				<Route exact path="/about-elton" component={PaEltonProfile} />
 				<Route exact path="/testimonials" component={Testimonials} />
-				<Route exact path="/testimony-details" component={TestimonyDetails} />
+				<Route exact path="/testimony-details/:id" component={TestimonyDetails} />
 				<Route exact path="/signup" component={SignUp} />
 				<Route exact path="/login" component={Login} />
 			</BrowserRouter>

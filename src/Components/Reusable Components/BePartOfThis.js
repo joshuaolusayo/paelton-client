@@ -7,12 +7,11 @@ const BeParts = () => {
 			<div className="col-md-8 mx-auto">
 				<h3>Be a part of this.</h3>
 				<p className="mt-4 mb-5">
-					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-					layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-					'Content here, content here', making it look like readable English.{" "}
+					Your donation helps to propagate the Kingdom gospel through the production and distribution of not-for-sale pamphlets
+					and booklets in different languages. God bless.
 				</p>
 				<Link to="/">
-					<button className="btn px-5 py-2 shadow bg-outline-pry">Give to the cause</button>
+					<button className="btn px-5 py-2 shadow bg-outline-pry text-uppercase">Give to the cause</button>
 				</Link>
 			</div>
 		</div>

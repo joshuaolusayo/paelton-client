@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
-  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: "DM Sans", sans-serif !important;
 }
 
 * {
@@ -33,7 +36,7 @@ html {
 }
 
 .bg-outline-pry:hover {
-  background: #043575;
+  background: #f88600;
   color: #fff;
 }
 
@@ -125,34 +128,70 @@ html {
 
 .hmpg .header {
   background-size: cover;
-  height: 650px;
-}
-
-@media screen and (min-width: 1600px) {
-  .hmpg .header {
-    height: 750px;
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .hmpg .header {
-    height: 800px;
-  }
 }
 
 .hmpg .header .container-fluid {
   height: 500px;
+  background-position: 50% 5% !important;
+}
+
+@media screen and (min-width: 576px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 35% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 40% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 45% !important;
+  }
+}
+
+@media screen and (min-width: 1305px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 50% !important;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 55% !important;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 60% !important;
+  }
+}
+
+@media screen and (min-width: 1820px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 65% !important;
+  }
+}
+
+@media screen and (min-width: 1960px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 75% !important;
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  .hmpg .header .container-fluid {
+    background-position: 50% 85% !important;
+  }
 }
 
 .hmpg .header .container-fluid .abs {
   position: relative;
-  top: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .hmpg .header .container-fluid .abs {
-    top: 60px;
-  }
+  height: 350px;
 }
 
 .hmpg .header nav {
@@ -179,9 +218,8 @@ html {
   }
 }
 
-.hmpg .header .wave {
-  object-fit: cover;
-  object-position: center bottom;
+.hmpg .header .style__header {
+  background: #0053ac !important;
 }
 
 .hmpg .header .style__header .p-abs {
@@ -381,8 +419,8 @@ html {
 }
 
 .hmpg .profile .read-more:hover {
-  background: #f8860040 !important;
-  color: #000 !important;
+  background: #0053ac !important;
+  color: #fff !important;
 }
 
 .hmpg .profile .img1,
@@ -602,30 +640,14 @@ html {
 }
 
 .about-elton .header .container-fluid .abs {
-  top: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-elton .header .container-fluid .abs {
-    top: 0;
-  }
-}
-
-.about-elton .header .style__header .abs {
-  top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-elton .header .style__header .abs {
-    top: 50px;
-  }
+  height: 280px;
 }
 
 .testimonials .header .container-fluid .abs,
 .article-details .header .container-fluid .abs,
 .book-details .header .container-fluid .abs,
 .testimony-details .header .container-fluid .abs {
-  top: 30px;
+  height: 280px;
 }
 
 .book-details .header .style__header .p-abs,
@@ -633,7 +655,7 @@ html {
 .about-elton .header .style__header .p-abs,
 .testimonials .header .style__header .p-abs,
 .testimony-details .header .style__header .p-abs {
-  height: 350px;
+  height: 400px;
 }
 
 .book-details .header .container-fluid,
@@ -641,7 +663,7 @@ html {
 .about-elton .header .container-fluid,
 .testimonials .header .container-fluid,
 .testimony-details .header .container-fluid {
-  height: 350px;
+  height: 400px;
 }
 
 .book-details .details .book-img {
@@ -778,6 +800,11 @@ html {
 
 .testimonials .header .container .abs {
   top: 50px;
+}
+
+.testimonials .profile-pic {
+  width: 30px;
+  height: 30px;
 }
 
 .testimonials a:hover {

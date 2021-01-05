@@ -3,7 +3,10 @@ $sec-color: #f88600;
 
 html {
 	scroll-behavior: smooth;
-	font-family: "DM Sans", sans-serif;
+}
+
+body {
+	font-family: "DM Sans", sans-serif !important;
 }
 
 * {
@@ -35,8 +38,8 @@ html {
 	color: $pry-color;
 
 	&:hover {
-		// background: $pry-color;
-		background: #043575;
+		background: $sec-color;
+		// background: #043575;
 		color: #fff;
 	}
 }
@@ -136,26 +139,51 @@ html {
 
 	.header {
 		background-size: cover;
-		height: 650px;
-
-		@media screen and (min-width: 1600px) {
-			height: 750px;
-		}
-
-		@media screen and (min-width: 2000px) {
-			height: 800px;
-		}
 
 		.container-fluid {
 			height: 500px;
+			background-position: 50% 5% !important;
+
+			@media screen and (min-width: 576px) {
+				background-position: 50% 35% !important;
+			}
+
+			@media screen and (min-width: 768px) {
+				background-position: 50% 40% !important;
+			}
+
+			@media screen and (min-width: 1024px) {
+				background-position: 50% 45% !important;
+			}
+
+			@media screen and (min-width: 1305px) {
+				background-position: 50% 50% !important;
+			}
+
+			@media screen and (min-width: 1500px) {
+				background-position: 50% 55% !important;
+			}
+
+			@media screen and (min-width: 1660px) {
+				background-position: 50% 60% !important;
+			}
+
+			@media screen and (min-width: 1820px) {
+				background-position: 50% 65% !important;
+			}
+
+			@media screen and (min-width: 1960px) {
+				background-position: 50% 75% !important;
+			}
+
+			@media screen and (min-width: 2160px) {
+				background-position: 50% 85% !important;
+				// height: 600px;
+			}
 
 			.abs {
 				position: relative;
-				top: 80px;
-
-				@media screen and (min-width: 768px) {
-					top: 60px;
-				}
+				height: 350px;
 			}
 		}
 
@@ -179,12 +207,9 @@ html {
 			}
 		}
 
-		.wave {
-			object-fit: cover;
-			object-position: center bottom;
-		}
-
 		.style__header {
+			background: $pry-color !important;
+
 			.p-abs {
 				height: 500px;
 
@@ -392,8 +417,8 @@ html {
 
 		.read-more {
 			&:hover {
-				background: #f8860040 !important;
-				color: #000 !important;
+				background: $pry-color !important;
+				color: #fff !important;
 			}
 		}
 
@@ -590,19 +615,7 @@ html {
 .about-elton {
 	.header {
 		.container-fluid .abs {
-			top: 50px;
-
-			@media screen and (min-width: 768px) {
-				top: 0;
-			}
-		}
-
-		.style__header .abs {
-			top: 30px;
-
-			@media screen and (min-width: 768px) {
-				top: 50px;
-			}
+			height: 280px;
 		}
 	}
 }
@@ -613,7 +626,7 @@ html {
 .testimony-details {
 	.header {
 		.container-fluid .abs {
-			top: 30px;
+			height: 280px;
 		}
 	}
 }
@@ -626,12 +639,12 @@ html {
 	.header {
 		.style__header {
 			.p-abs {
-				height: 350px;
+				height: 400px;
 			}
 		}
 
 		.container-fluid {
-			height: 350px;
+			height: 400px;
 		}
 	}
 }
@@ -796,6 +809,11 @@ html {
 				top: 50px;
 			}
 		}
+	}
+
+	.profile-pic {
+		width: 30px;
+		height: 30px;
 	}
 
 	a {
