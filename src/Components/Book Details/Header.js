@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
 import AOS from "aos";
 
-const Header = () => {
+const Header = (props) => {
 	const [showNav, setShowNav] = useState(false);
 
 	useEffect(() => {
 		AOS.init({ duration: 600, once: true });
 	});
 
-	return (
+	console.log(props);
+	return props.data ? (
 		<header className={`header h-100 bg-pry `}>
 			<div className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}>
 				<div className="custom">
@@ -26,10 +27,10 @@ const Header = () => {
 
 					<div className="abs d-flex flex-column justify-content-center">
 						<h1 className="font-weight-bold mb-4" data-aos="fade-down">
-							The Kingdom has come
+							{props.data.title}
 						</h1>
 						<p data-aos="fade-up">
-							<i className="fa fa-child pr-3"></i>Ruth Elton
+							<i className="fa fa-child pr-3"></i>{props.data.author}
 						</p>
 						<p data-aos="fade-up">
 							<i className="fa fa-copy pr-3"></i>70 pages
@@ -40,6 +41,8 @@ const Header = () => {
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
 		</header>
+	) : (
+		<div className="my-5 text-center lead">Loading...</div>
 	);
 };
 

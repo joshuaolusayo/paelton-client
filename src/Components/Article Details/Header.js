@@ -24,7 +24,7 @@ const Header = (props) => {
 						</button>
 					</nav>
 
-					<div className="abs d-flex flex-column h-50">
+					<div className="abs d-flex flex-column justify-content-center">
 						<h1 className="font-weight-bold mb-4" data-aos="fade-down">
 							{props.data.title}
 						</h1>

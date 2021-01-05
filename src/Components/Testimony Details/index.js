@@ -13,7 +13,6 @@ const TestimonyDetails = (props) => {
 	const { pathname } = useLocation();
 	const [loading, setLoading] = useState(true);
 	let params = useParams();
-	console.log(params.id);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -24,8 +23,8 @@ const TestimonyDetails = (props) => {
 
 	return !loading ? (
 		<div className="hmpg testimony-details">
-			<Header />
-			<Details />
+			<Header data={props.testimonial.data.data} />
+			<Details data={props.testimonial.data.data} />
 			<Footer />
 			<ScrollToTop />
 		</div>

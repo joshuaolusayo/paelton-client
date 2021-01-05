@@ -3,13 +3,14 @@ import AOS from "aos";
 import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
 
-const Header = () => {
+const Header = (props) => {
 	useEffect(() => {
 		AOS.init({ duration: 600, once: true });
 	});
 
 	const [showNav, setShowNav] = useState(false);
-	return (
+	
+	return props.data ? (
 		<header className={`header h-100 bg-pry ${showNav ? "style__header" : ""}`}>
 			<div className={`container-fluid px-0 text-light text-center bg-pry ${showNav ? "style__header" : ""}`}>
 				<div className="custom">
@@ -24,13 +25,16 @@ const Header = () => {
 					</nav>
 
 					<div className="abs">
-						<div className={`d-flex flex-column justify-content-start align-items-start ${showNav ? "" : "col-md-8"}`}>
+						<div
+							className={`d-flex flex-column justify-content-center align-items-start h-100 ${
+								showNav ? "" : "col-md-8 pl-0"
+							}`}
+						>
 							<h1 className="font-weight-bold text-left" data-aos="fade-down">
-								Revd. Emiko Amotsuka
+								{props.data.name}
 							</h1>
-							<p className="my-3 my-md-3 text-left" data-aos="fade-up">
-								Former President, Ibadan Varsity Christian Union (IVCU, 1975/76), President Koinonia Ministries, Ibadan,
-								Nigeria
+							<p className={`my-3 my-md-3 text-left ${showNav ? "d-none d-md-block" : ""}`} data-aos="fade-up">
+								{props.data.title}
 							</p>
 							<span data-aos="fade-up">
 								<i className="fa fa-clock-o"></i> 17 mins read
@@ -42,6 +46,8 @@ const Header = () => {
 				<ShowNav showNav={showNav} setShowNav={setShowNav} />
 			</div>
 		</header>
+	) : (
+		<div className="my-5 text-center lead">Loading...</div>
 	);
 };
 

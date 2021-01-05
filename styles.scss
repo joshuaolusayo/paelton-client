@@ -120,6 +120,10 @@ p {
 	}
 }
 
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
 .nav {
 	a {
 		position: relative;
@@ -147,6 +151,7 @@ p {
 		.container-fluid {
 			height: 500px;
 			background-position: 50% 5% !important;
+			overflow: none;
 
 			@media screen and (min-width: 576px) {
 				background-position: 50% 35% !important;
@@ -177,12 +182,7 @@ p {
 			}
 
 			@media screen and (min-width: 1960px) {
-				background-position: 50% 75% !important;
-			}
-
-			@media screen and (min-width: 2160px) {
-				background-position: 50% 85% !important;
-				// height: 600px;
+				background-position: 50% 70% !important;
 			}
 
 			.abs {
@@ -200,14 +200,17 @@ p {
 		}
 
 		h1 {
-			font-size: 30px;
+			font-size: 22px;
+			line-height: 30px;
 
 			@media screen and (min-width: 576px) {
-				font-size: 40px;
+				font-size: 30px;
+				line-height: 38px;
 			}
 
 			@media screen and (min-width: 768px) {
-				font-size: 50px;
+				font-size: 35px;
+				line-height: 43px;
 			}
 		}
 
@@ -552,9 +555,17 @@ p {
 		}
 
 		h1 {
-			font-size: 25px;
+			font-size: 16px;
+			line-height: 20px;
+
 			@media screen and (min-width: 576px) {
-				font-size: 35px;
+				font-size: 20px;
+				line-height: 25px;
+			}
+
+			@media screen and (min-width: 768px) {
+				font-size: 25px;
+				line-height: 30px;
 			}
 		}
 
@@ -907,6 +918,11 @@ p {
 			text-decoration: none;
 		}
 	}
+}
+
+.rule {
+	height: 2px;
+	background-color: $sec-color;
 }
 
 .pagination {

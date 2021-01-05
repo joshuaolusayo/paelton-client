@@ -17,8 +17,8 @@ const Homepage = () => {
 	return (
 		<div className="hmpg">
 			<Header />
-			<Cards />
 			<Profile />
+			<Cards />
 			<BeParts />
 			<Footer />
 			<ScrollToTop />

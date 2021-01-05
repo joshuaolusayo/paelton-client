@@ -110,6 +110,10 @@ p {
   }
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .nav a {
   position: relative;
   transition: all 500ms ease;
@@ -137,6 +141,7 @@ p {
 .hmpg .header .container-fluid {
   height: 500px;
   background-position: 50% 5% !important;
+  overflow: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -183,13 +188,7 @@ p {
 
 @media screen and (min-width: 1960px) {
   .hmpg .header .container-fluid {
-    background-position: 50% 75% !important;
-  }
-}
-
-@media screen and (min-width: 2160px) {
-  .hmpg .header .container-fluid {
-    background-position: 50% 85% !important;
+    background-position: 50% 70% !important;
   }
 }
 
@@ -207,18 +206,21 @@ p {
 }
 
 .hmpg .header h1 {
-  font-size: 30px;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 576px) {
   .hmpg .header h1 {
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hmpg .header h1 {
-    font-size: 50px;
+    font-size: 35px;
+    line-height: 43px;
   }
 }
 
@@ -574,12 +576,21 @@ p {
 }
 
 .header .style__header h1 {
-  font-size: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 576px) {
   .header .style__header h1 {
-    font-size: 35px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .style__header h1 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -889,6 +900,11 @@ p {
 .footer a:hover {
   color: #fff !important;
   text-decoration: none;
+}
+
+.rule {
+  height: 2px;
+  background-color: #f88600;
 }
 
 .pagination {
