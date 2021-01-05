@@ -24,7 +24,7 @@ const Header = () => {
 					</nav>
 
 					<div className="abs tt">
-						<div className="d-flex flex-column justify-content-start align-items-start col-md-8 px-0">
+						<div className="d-flex flex-column h-100 justify-content-center align-items-start col-md-8 px-0">
 							<h1 className="font-weight-bold" data-aos="fade-down">
 								Testimonials.
 							</h1>
