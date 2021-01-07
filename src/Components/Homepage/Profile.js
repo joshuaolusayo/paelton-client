@@ -17,7 +17,7 @@ const Profile = () => {
 				<div className="container" data-aos="zoom-in">
 					<div className="row align-items-center py-3">
 						<div className="col-lg-6">
-							<h3 className="font-weight-bold">Pa Elton's Profile</h3>
+							<h3 className="font-weight-bold">SG Elton: A Man Sent From God</h3>
 							<p>
 								Pa Elton, as he was popularly called, left his native country, England, to come to Ilesha, Nigeria in March
 								1937 in response to a divine call to be a missionary; his wife and only child, 3-year old Ruth, joining him

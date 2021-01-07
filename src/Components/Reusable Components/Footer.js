@@ -15,7 +15,10 @@ const Footer = () => {
 						</div>
 						<div className="col-lg-3 d-flex flex-column mt-5 mt-lg-0">
 							<h3 className="text-light mb-5">Quick Links</h3>
-							<Link to="/about-elton" className="text-muted">
+							<Link to="/" className="text-muted">
+								Home
+							</Link>
+							<Link to="/about-elton" className="text-muted mt-3">
 								About SG Elton
 							</Link>
 							<Link to="/testimonials" className="text-muted mt-3">
