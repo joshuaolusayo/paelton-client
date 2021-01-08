@@ -906,6 +906,10 @@ p {
   transform: scale(0.98);
 }
 
+.footer .text-muted {
+  color: #c5c5c5 !important;
+}
+
 .footer a:hover {
   color: #fff !important;
   text-decoration: none;

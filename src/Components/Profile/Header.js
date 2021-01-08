@@ -31,7 +31,7 @@ const Header = () => {
 					<div className="abs d-flex justify-content-between align-items-center">
 						<div className="d-flex flex-column justify-content-start align-items-start">
 							<h1 className="font-weight-bold" data-aos="fade-down">
-								Pa Elton Profile.
+								Pa Elton's Profile.
 							</h1>
 							<p data-aos="fade-up">Written by Adeyemo Temidayo</p>
 						</div>

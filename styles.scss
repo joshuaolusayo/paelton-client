@@ -944,6 +944,10 @@ p {
 }
 
 .footer {
+	.text-muted {
+		color: #c5c5c5 !important;
+	}
+
 	a {
 		&:hover {
 			color: #fff !important;

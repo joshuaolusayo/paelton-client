@@ -37,7 +37,7 @@ const Footer = () => {
 								info@sgelton.com
 							</a>
 							<span className="text-muted py-1 py-lg-auto mt-3">
-								New nation center, New Market, OAU, Ile-Ife, Osun state, Nigeria
+								New Nation Center, New Market, OAU, Ile-Ife, Osun State, Nigeria.
 							</span>
 						</div>
 					</div>
