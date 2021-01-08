@@ -25,7 +25,7 @@ const BookDetails = (props) => {
 	return !loading ? (
 		<div className="hmpg book-details">
 			<HelmetProvider>
-				<Helmet>
+				<Helmet defer={false}>
 					<title>{props.book.data.data.title}</title>
 					<meta name="description" content={`${props.book.data.data.title} written by S G Elton`} />
 					<meta name="author" content="Ennovate Lab" />

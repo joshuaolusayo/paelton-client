@@ -17,7 +17,7 @@ const PaEltonProfile = () => {
 	return (
 		<div className="hmpg about-elton">
 			<HelmetProvider>
-				<Helmet>
+				<Helmet defer={false}>
 					<title>About S G Elton</title>
 					<meta name="description" content="About S G Elton" />
 					<meta name="author" content="Ennovate Lab" />

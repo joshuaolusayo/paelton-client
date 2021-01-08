@@ -21,7 +21,7 @@ const Testimonials = (props) => {
 	return !loading ? (
 		<div className="hmpg testimonials">
 			<HelmetProvider>
-				<Helmet>
+				<Helmet defer={false}>
 					<title>Testimonials</title>
 					<meta name="description" content="Testimonials" />
 					<meta name="author" content="Ennovate Lab" />

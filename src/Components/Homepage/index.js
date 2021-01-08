@@ -19,7 +19,8 @@ const Homepage = () => {
 	return (
 		<div className="hmpg">
 			<HelmetProvider>
-				<Helmet>
+				<Helmet defer={false}>
+					<title>S G Elton</title>
 					<meta name="description" content="Legacy website of S G Elton" />
 					<meta name="author" content="Ennovate Lab" />
 					<meta name="keywords" content="S G Elton, About S G Elton, S G Elton Legacy's website" />

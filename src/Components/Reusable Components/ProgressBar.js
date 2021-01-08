@@ -22,7 +22,7 @@ const ProgressBar = () => {
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
-			window.removeEventListener("scroll", progressBarHandler);
+			window.removeEventListener("scroll", () => progressBarHandler);
 			window.removeEventListener("scroll", () => handleScroll);
 		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
