@@ -142,6 +142,7 @@ p {
   height: 500px;
   background-position: 50% 5% !important;
   overflow: none;
+  background: linear-gradient(to right, #0053ac, #00428a);
 }
 
 @media screen and (min-width: 576px) {
@@ -222,10 +223,6 @@ p {
     font-size: 35px;
     line-height: 43px;
   }
-}
-
-.hmpg .header .style__header {
-  background: #0053ac !important;
 }
 
 .hmpg .header .style__header .p-abs {
@@ -563,7 +560,7 @@ p {
 }
 
 .header .style__header .p-abs #cancel {
-  top: 15px;
+  top: 20px;
   position: relative;
 }
 
@@ -628,29 +625,29 @@ p {
   }
 }
 
-.header .progress-container {
+.progress-container {
   position: sticky;
   z-index: 10;
   background: #ccc;
   width: 100%;
 }
 
-.header .progress-container .progress-bar {
+.progress-container .progress-bar {
   background: #f88600;
   transform-origin: top left;
   transform: scale(0, 0);
   opacity: 0;
 }
 
-.header .progress-container.sticky .progress-bar {
+.progress-container.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.header .progress-container .progress-container,
-.header .progress-container .progress-bar {
+.progress-container .progress-container,
+.progress-container .progress-bar {
   height: 10px;
 }
 
@@ -845,6 +842,14 @@ p {
 
 .testimonials a .card .card-footer:last-child {
   border-top: none;
+}
+
+.testimonials a .card-body {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
 }
 
 .auth .row {

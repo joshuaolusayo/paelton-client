@@ -11,7 +11,7 @@ const Header = (props) => {
 	});
 
 	return props.data ? (
-		<header className={`header h-100 bg-pry `}>
+		<header className={`header h-100 `}>
 			<div className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-itmes-center">

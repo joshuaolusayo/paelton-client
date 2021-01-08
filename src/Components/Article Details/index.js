@@ -5,6 +5,7 @@ import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
 import Header from "./Header";
+import ProgressBar from "../Reusable Components/ProgressBar";
 
 import { useParams } from "react-router";
 import { fetchArticle } from "../../actions/articles";
@@ -35,6 +36,7 @@ const ArticleDetails = (props) => {
 					/>
 				</Helmet>
 				<Header data={props.article.data.data} />
+				<ProgressBar />
 				<Details data={props.article.data.data} />
 				<Footer />
 				<ScrollToTop />

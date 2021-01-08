@@ -12,7 +12,7 @@ const Header = () => {
 
 	return (
 		<header className="header h-100">
-			<div className={`container-fluid px-0 text-light text-center bg-pry ${showNav ? "style__header" : ""}`}>
+			<div className={`container-fluid px-0 text-light text-center ${showNav ? "style__header" : ""}`}>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-items-center">
 						<Link to="/">

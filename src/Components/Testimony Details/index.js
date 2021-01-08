@@ -5,6 +5,7 @@ import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
 import Header from "./Header";
+import ProgressBar from "../Reusable Components/ProgressBar";
 
 import { useParams } from "react-router";
 import { getTestimonial } from "../../actions/testimonial";
@@ -35,6 +36,7 @@ const TestimonyDetails = (props) => {
 					/>
 				</Helmet>
 				<Header data={props.testimonial.data.data} />
+				<ProgressBar />
 				<Details data={props.testimonial.data.data} />
 				<Footer />
 				<ScrollToTop />

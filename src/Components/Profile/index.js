@@ -5,6 +5,7 @@ import Footer from "../Reusable Components/Footer";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
 import Header from "./Header";
+import ProgressBar from "../Reusable Components/ProgressBar";
 
 const PaEltonProfile = () => {
 	const { pathname } = useLocation();
@@ -23,6 +24,7 @@ const PaEltonProfile = () => {
 					<meta name="keywords" content="S G Elton, About S G Elton, S G Elton Legacy's website" />
 				</Helmet>
 				<Header />
+				<ProgressBar />
 				<Details />
 				<Footer />
 				<ScrollToTop />

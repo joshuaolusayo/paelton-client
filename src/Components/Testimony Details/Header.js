@@ -9,7 +9,7 @@ const Header = (props) => {
 	});
 
 	const [showNav, setShowNav] = useState(false);
-	
+
 	return props.data ? (
 		<header className={`header h-100 bg-pry ${showNav ? "style__header" : ""}`}>
 			<div className={`container-fluid px-0 text-light text-center bg-pry ${showNav ? "style__header" : ""}`}>

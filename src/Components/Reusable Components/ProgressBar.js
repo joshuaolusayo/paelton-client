@@ -6,9 +6,7 @@ const ProgressBar = () => {
 	const ref = useRef(null);
 
 	const handleScroll = () => {
-		if (ref.current) {
-			setSticky(ref.current.getBoundingClientRect().top <= 0);
-		}
+		ref.current && document.documentElement.scrollTop > 400 ? setSticky(true) : setSticky(false);
 	};
 
 	useEffect(() => {
@@ -27,7 +25,7 @@ const ProgressBar = () => {
 			window.removeEventListener("scroll", progressBarHandler);
 			window.removeEventListener("scroll", () => handleScroll);
 		};
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (
