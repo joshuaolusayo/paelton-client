@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import ArticleDetails from "./Components/Article Details";
 import BookDetails from "./Components/Book Details";
-import Donate from "./Components/Donate";
 import Homepage from "./Components/Homepage";
 import PaEltonProfile from "./Components/Profile";
 import Testimonials from "./Components/Testimonials";
@@ -28,7 +27,6 @@ ReactDOM.render(
 				<Route exact path="/about-elton" component={PaEltonProfile} />
 				<Route exact path="/testimonials" component={Testimonials} />
 				<Route exact path="/testimony-details/:id" component={TestimonyDetails} />
-				{/* <Route exact path="/donate" component={Donate} /> */}
 				<Route exact path="/signup" component={SignUp} />
 				<Route exact path="/login" component={Login} />
 			</BrowserRouter>

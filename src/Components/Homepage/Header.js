@@ -11,7 +11,7 @@ const Header = () => {
 	});
 
 	return (
-		<header className="header mb-5">
+		<header className="header">
 			<div className={`container-fluid px-0 text-light text-center ${showNav ? "style__header hm" : ""}`}>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-itmes-center">

@@ -99,23 +99,7 @@ p {
 	}
 }
 
-// .mb- {
-// 	&8 {
-// 		margin-bottom: 8rem;
-// 	}
 
-// 	&md-8 {
-// 		@media screen and (min-width: 768px) {
-// 			margin-bottom: 8rem !important;
-// 		}
-// 	}
-
-// 	&lg-8 {
-// 		@media screen and (min-width: 992px) {
-// 			margin-bottom: 8rem !important;
-// 		}
-// 	}
-// }
 
 .my- {
 	&8 {
@@ -134,6 +118,15 @@ p {
 		@media screen and (min-width: 992px) {
 			margin-top: 8rem !important;
 			margin-bottom: 8rem !important;
+		}
+	}
+}
+
+.py- {
+	&lg-8 {
+		@media screen and (min-width: 992px) {
+			padding-top: 8.5rem !important;
+			padding-bottom: 8.5rem !important;
 		}
 	}
 }
@@ -474,8 +467,10 @@ p {
 	}
 
 	.profile__elton {
-		.wave {
-			height: 100px;
+		margin-bottom: 6em !important;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 7rem !important;
 		}
 	}
 
@@ -991,12 +986,12 @@ p {
 	}
 }
 
-.donate {
-	input {
-		border-bottom: 1px solid #000 !important;
+// .donate {
+// 	input {
+// 		border-bottom: 1px solid #000 !important;
 
-		&:focus {
-			outline: none;
-		}
-	}
-}
+// 		&:focus {
+// 			outline: none;
+// 		}
+// 	}
+// }

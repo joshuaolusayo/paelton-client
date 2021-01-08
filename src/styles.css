@@ -110,6 +110,13 @@ p {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .py-lg-8 {
+    padding-top: 8.5rem !important;
+    padding-bottom: 8.5rem !important;
+  }
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -453,8 +460,14 @@ p {
   }
 }
 
-.hmpg .profile__elton .wave {
-  height: 100px;
+.hmpg .profile__elton {
+  margin-bottom: 6em !important;
+}
+
+@media screen and (min-width: 768px) {
+  .hmpg .profile__elton {
+    margin-bottom: 7rem !important;
+  }
 }
 
 .hmpg .be-parts {
@@ -946,12 +959,4 @@ p {
 .pagination li.active a {
   background: #f88600;
   color: #fff;
-}
-
-.donate input {
-  border-bottom: 1px solid #000 !important;
-}
-
-.donate input:focus {
-  outline: none;
 }

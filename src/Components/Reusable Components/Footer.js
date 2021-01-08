@@ -18,9 +18,14 @@ const Footer = () => {
 							<Link to="/" className="text-muted">
 								Home
 							</Link>
-							<Link to="/" className="text-muted mt-3">
+							<a
+								href="https://paystack.com/pay/2x6er1w-f9"
+								className="text-muted mt-3"
+								target="_blank"
+								rel="nofollow noreferrer"
+							>
 								Donate
-							</Link>
+							</a>
 							<Link to="/testimonials" className="text-muted mt-3">
 								Testimonials
 							</Link>

@@ -20,17 +20,15 @@ const ShowNav = ({ showNav, setShowNav }) => {
 				<Link className="my-3 text-pry" to="/">
 					Home
 				</Link>
-				<Link className="my-3 text-pry" to="/">
+				<a href="https://paystack.com/pay/2x6er1w-f9" className="my-3 text-pry" target="_blank" rel="nofollow noreferrer">
 					Donate
-				</Link>
+				</a>
 				<Link className="my-3 text-pry" to="/testimonials">
 					Testimonials
 				</Link>
 				<Link className="my-3 text-pry" to="/about-elton">
 					About SG Elton
 				</Link>
-				
-				
 			</div>
 		</div>
 	);

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const BeParts = () => {
 	return (
@@ -10,9 +9,9 @@ const BeParts = () => {
 					Your donation helps to propagate the Kingdom gospel through the production and distribution of not-for-sale pamphlets
 					and booklets in different languages. God bless.
 				</p>
-				<Link to="/">
+				<a href="https://paystack.com/pay/2x6er1w-f9" className="text-muted mt-3" target="_blank" rel="nofollow noreferrer" to="/">
 					<button className="btn px-5 py-2 shadow bg-outline-pry text-uppercase">Give to the cause</button>
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

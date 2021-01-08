@@ -11,9 +11,9 @@ const Profile = () => {
 	}, []);
 
 	return (
-		<div className="profile__elton my-5 my-lg-8">
-			<img className="w-100 wave d-none d-md-inline-block" src="./assets/wave1.png" alt="Wave" />
-			<div className="container-fluid bg-svg mx-0 py-5 py-md-0 my-5 my-md-0 d-flex justify-content-center align-items-center profile">
+		<div className="bg-svg py-5 py-lg-8 mb-5 profile__elton">
+			{/* <img className="w-100 wave d-none d-md-inline-block" src="./assets/wave1.png" alt="Wave" /> */}
+			<div className="container-fluid mx-0 my-4 my-md-0 d-flex justify-content-center align-items-center profile">
 				<div className="container" data-aos="zoom-in">
 					<div className="row align-items-center py-3">
 						<div className="col-lg-6">
@@ -36,7 +36,7 @@ const Profile = () => {
 					</div>
 				</div>
 			</div>
-			<img className="w-100 wave d-none d-md-inline-block" src="./assets/wave2.png" alt="Wave" />
+			{/* <img className="w-100 wave d-none d-md-inline-block" src="./assets/wave2.png" alt="Wave" /> */}
 		</div>
 	);
 };
