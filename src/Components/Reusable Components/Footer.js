@@ -18,14 +18,14 @@ const Footer = () => {
 							<Link to="/" className="text-muted">
 								Home
 							</Link>
-							<Link to="/about-elton" className="text-muted mt-3">
-								About SG Elton
+							<Link to="/" className="text-muted mt-3">
+								Donate
 							</Link>
 							<Link to="/testimonials" className="text-muted mt-3">
 								Testimonials
 							</Link>
-							<Link to="/" className="text-muted mt-3">
-								Donate
+							<Link to="/about-elton" className="text-muted mt-3">
+								About SG Elton
 							</Link>
 						</div>
 						<div className="col-lg-3 d-flex flex-column my-5 my-lg-0">

@@ -1,13 +1,11 @@
 import React from "react";
 import Articles from "../Homepage/Cards/Articles";
 import Share from "../Reusable Components/Share";
-// import ProgressBar from "../Reusable Components/ProgressBar";
 import ReactHtmlParser from "react-html-parser";
 
 const Details = (props) => {
 	return props.data ? (
 		<div className="container my-5 my-lg-8 details">
-			{/* <ProgressBar /> */}
 			<div className="row justify-content-between align-items-start">
 				<div className="col-md-5 col-xl-4">
 					<Share tag={["S G Elton", props.title]} title={props.title} img={props.image} intro={props.title} />

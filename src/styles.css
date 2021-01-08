@@ -947,3 +947,11 @@ p {
   background: #f88600;
   color: #fff;
 }
+
+.donate input {
+  border-bottom: 1px solid #000 !important;
+}
+
+.donate input:focus {
+  outline: none;
+}

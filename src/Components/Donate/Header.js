@@ -34,12 +34,8 @@ const Header = () => {
 						}`}
 					>
 						<h1 className={`font-weight-bold ${showNav ? "text-left" : ""}`} data-aos="fade-down">
-							Pa SG Elton left a wealth of priceless spiritual resources. You can now experience the richness of his legacy
-							here.
+							Donate
 						</h1>
-						<a href="#explore" className="btn bg-outline-pry px-5 py-2 shadow mt-3 mt-md-5" data-aos="fade-up">
-							Explore
-						</a>
 					</div>
 				</div>
 
