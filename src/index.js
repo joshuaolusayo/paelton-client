@@ -7,8 +7,6 @@ import Homepage from "./Components/Homepage";
 import PaEltonProfile from "./Components/Profile";
 import Testimonials from "./Components/Testimonials";
 import TestimonyDetails from "./Components/Testimony Details";
-import SignUp from "./Components/Auth/SignUp";
-import Login from "./Components/Auth/Login";
 
 import "aos/dist/aos.css";
 import "./styles.css";
@@ -27,8 +25,6 @@ ReactDOM.render(
 				<Route exact path="/about-elton" component={PaEltonProfile} />
 				<Route exact path="/testimonials" component={Testimonials} />
 				<Route exact path="/testimony-details/:id" component={TestimonyDetails} />
-				<Route exact path="/signup" component={SignUp} />
-				<Route exact path="/login" component={Login} />
 			</BrowserRouter>
 		</Provider>
 	</React.StrictMode>,
