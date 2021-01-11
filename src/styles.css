@@ -117,6 +117,10 @@ body {
   overflow-x: hidden;
 }
 
+.f-16 {
+  font-size: 16px;
+}
+
 .nav a {
   position: relative;
   transition: all 500ms ease;
@@ -207,6 +211,10 @@ body {
 
 .hmpg .cards .card-body {
   background-color: #fff !important;
+}
+
+.hmpg .cards .card-text p {
+  font-size: 16px;
 }
 
 .hmpg .cards .audio:focus {

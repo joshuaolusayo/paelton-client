@@ -14,7 +14,7 @@ const Details = (props) => {
 						intro={`This is a testimony about Pa S G Elton shared by ${props.name}`}
 					/>
 				</div>
-				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted content">
+				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted f-16">
 					{/* <h1 className="font-weight-bold text-black mb-4">{props.data.title}</h1> */}
 					{ReactHtmlParser(props.data.testimony)}
 				</div>

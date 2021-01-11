@@ -38,7 +38,7 @@ const Header = (props) => {
 						<h1 className="font-weight-bold mb-4" data-aos="fade-down">
 							{props.data.title}
 						</h1>
-						<p className={`${showNav ? "d-none d-md-block" : "d-block"}`} data-aos="fade-up">
+						<p className={`${showNav ? "d-none d-md-block" : "d-block"} f-16`} data-aos="fade-up">
 							<i className="fa fa-clock-o pr-3 text-light"></i> Reading time about {readingTime.text}
 						</p>
 					</div>

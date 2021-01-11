@@ -11,7 +11,7 @@ const Share = ({ tag = "", title, img, intro }) => {
 	return (
 		<div className="shadow rounded p-4 p-lg-5 share mt-5 mt-lg-0">
 			<h2 className="font-weight-bold">Share this article</h2>
-			<p className="text-muted">Share on various platforms</p>
+			<p className="text-muted f-16">Share on various platforms</p>
 			<div className="d-flex justify-content-between align-items-center w-100">
 				<LinkedinShareButton url={param.url} title={title} summary={intro} source={param.url} target="_blank" rel="noreferrer">
 					<div className="text-light rounded-circle d-inline-block" id="ln">

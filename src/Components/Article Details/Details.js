@@ -11,7 +11,7 @@ const Details = (props) => {
 				<div className="col-md-5 col-xl-4">
 					<Share tag={["S G Elton", props.title]} title={props.title} img={props.image} intro={props.title} />
 				</div>
-				<div className="col-md-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-0 text-muted overflow-x-hidden">
+				<div className="col-md-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-0 text-muted overflow-x-hidden f-16">
 					{ReactHtmlParser(props.data.content)}
 				</div>
 			</div>

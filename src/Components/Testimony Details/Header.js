@@ -40,10 +40,10 @@ const Header = (props) => {
 							<h1 className="font-weight-bold text-left" data-aos="fade-down">
 								{props.data.name}
 							</h1>
-							<p className={`my-3 my-md-3 text-left ${showNav ? "d-none d-md-block" : ""}`} data-aos="fade-up">
+							<p className={`my-3 my-md-3 text-left ${showNav ? "d-none d-md-block" : ""} f-16`} data-aos="fade-up">
 								{props.data.title}
 							</p>
-							<span data-aos="fade-up">
+							<span data-aos="fade-up" className="f-16">
 								<i className="fa fa-clock-o"></i> {ReadingTime(props.data.testimony).text}
 							</span>
 						</div>

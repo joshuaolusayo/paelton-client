@@ -17,8 +17,6 @@ const Audios = (props) => {
 	const indexOfLastToDo = activePage * display;
 	const indexOfFirstToDo = indexOfLastToDo - display;
 	useEffect(() => {
-		
-
 		if (loading) {
 			props.getAllAudios().then(() => setLoading(false));
 		}

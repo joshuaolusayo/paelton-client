@@ -129,6 +129,10 @@ body {
 	overflow-x: hidden;
 }
 
+.f-16 {
+	font-size: 16px;
+}
+
 .nav {
 	a {
 		position: relative;
@@ -220,6 +224,12 @@ body {
 
 		.card-body {
 			background-color: #fff !important;
+		}
+
+		.card-text {
+			p {
+				font-size: 16px;
+			}
 		}
 
 		.audio {
@@ -898,15 +908,6 @@ body {
 		}
 	}
 }
-
-// .bt {
-// 	// border-top: 1px solid $sec-color;
-// }
-
-// .rule {
-// 	height: .00625px;
-// 	background-color: $sec-color;
-// }
 
 .pagination {
 	justify-content: center;

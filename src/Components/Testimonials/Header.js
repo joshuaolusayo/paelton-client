@@ -35,7 +35,7 @@ const Header = () => {
 							<h1 className="font-weight-bold" data-aos="fade-down">
 								Testimonials.
 							</h1>
-							<p className="text-left" data-aos="fade-up">
+							<p className="text-left f-16" data-aos="fade-up">
 								Men of God speak about the influence of Pa S G Elton. (Excerpts from Essence Restored Magazine maiden
 								edition (2004))
 							</p>

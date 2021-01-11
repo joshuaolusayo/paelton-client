@@ -60,15 +60,6 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			{/* <div className="bg-black">
-				<hr className="rule my-0" />
-				<p className="text-light text-center py-4 my-0">
-					Made with <i className="fa fa-heart text-sec"></i> by{" "}
-					<a className="text-light" href="http://www.ennnovatelab.com">
-						Ennovate Lab
-					</a>
-				</p>
-			</div> */}
 		</>
 	);
 };
