@@ -12,7 +12,10 @@ const Header = (props) => {
 
 	return props.data ? (
 		<header className={`header h-100 `}>
-			<div className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}>
+			<div
+				className={`container-fluid px-0 text-light ${showNav ? "style__header" : ""}`}
+				style={{ backgroundImage: "url(/assets/rect.png)" }}
+			>
 				<div className="custom">
 					<nav className="d-flex justify-content-between align-itmes-center">
 						<Link to="/">
@@ -33,7 +36,8 @@ const Header = (props) => {
 							{props.data.title}
 						</h1>
 						<p data-aos="fade-up">
-							<i className="fa fa-child pr-3"></i>{props.data.author}
+							<i className="fa fa-child pr-3"></i>
+							{props.data.author}
 						</p>
 						<p data-aos="fade-up">
 							<i className="fa fa-copy pr-3"></i>70 pages

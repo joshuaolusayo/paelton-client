@@ -99,8 +99,6 @@ p {
 	}
 }
 
-
-
 .my- {
 	&8 {
 		margin-top: 8rem;
@@ -161,41 +159,8 @@ p {
 
 		.container-fluid {
 			height: 500px;
-			background-position: 50% 5% !important;
-			overflow: none;
+			background-position: 00% 5% !important;
 			background: linear-gradient(to right, $pry-color, #00428a);
-
-			@media screen and (min-width: 576px) {
-				background-position: 50% 35% !important;
-			}
-
-			@media screen and (min-width: 768px) {
-				background-position: 50% 40% !important;
-			}
-
-			@media screen and (min-width: 1024px) {
-				background-position: 50% 45% !important;
-			}
-
-			@media screen and (min-width: 1305px) {
-				background-position: 50% 50% !important;
-			}
-
-			@media screen and (min-width: 1500px) {
-				background-position: 50% 55% !important;
-			}
-
-			@media screen and (min-width: 1660px) {
-				background-position: 50% 60% !important;
-			}
-
-			@media screen and (min-width: 1820px) {
-				background-position: 50% 65% !important;
-			}
-
-			@media screen and (min-width: 1960px) {
-				background-position: 50% 70% !important;
-			}
 
 			.abs {
 				position: relative;
@@ -440,10 +405,31 @@ p {
 		}
 
 		.img1 {
-			width: 300px;
-			height: 350px;
-			margin-top: -80px;
-			margin-left: -100px;
+			width: 170px;
+			height: 200px;
+			margin-top: -40px;
+			margin-left: -20px;
+
+			@media screen and (min-width: 480px) {
+				width: 200px;
+				height: 225px;
+				margin-top: -40px;
+				margin-left: -20px;
+			}
+
+			@media screen and (min-width: 768px) {
+				width: 250px;
+				height: 260px;
+				// margin-top: -80px;
+				margin-left: -80px;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: 300px;
+				height: 350px;
+				margin-top: -80px;
+				margin-left: -100px;
+			}
 
 			@media screen and (min-width: 1204px) {
 				width: 350px;
@@ -452,11 +438,30 @@ p {
 		}
 
 		.img2 {
-			width: 200px;
-			height: 230px;
+			width: 120px;
+			height: 130px;
 			position: relative;
-			// left: 15%;
-			top: 100px;
+			top: 50px;
+			left: 30px;
+
+			@media screen and (min-width: 480px) {
+				width: 150px;
+				height: 165px;
+				top: 60px;
+				left: 35px;
+			}
+
+			@media screen and (min-width: 768px) {
+				width: 180px;
+				height: 190px;
+				top: 100px;
+			}
+
+			@media screen and (min-width: 992px) {
+				width: 200px;
+				height: 230px;
+				top: 100px;
+			}
 
 			@media screen and (min-width: 1204px) {
 				width: 250px;
