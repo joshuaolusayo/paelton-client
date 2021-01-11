@@ -46,7 +46,7 @@ const Footer = () => {
 							</span>
 						</div>
 					</div>
-					<div className="bt">
+					<div className="overflow-x-hidden">
 						<svg width="1170" height="1" viewBox="0 0 1170 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<line y1="0.75" x2="1170" y2="0.75" stroke="#F88600" strokeWidth="0.5" />
 						</svg>
