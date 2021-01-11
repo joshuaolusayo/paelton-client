@@ -157,6 +157,7 @@ body {
 			height: 500px;
 			background-position: 00% 5% !important;
 			background: linear-gradient(to right, $pry-color, #00428a);
+			background-size: cover !important;
 
 			.abs {
 				position: relative;
@@ -420,17 +421,17 @@ body {
 				margin-left: -80px;
 			}
 
-			@media screen and (min-width: 992px) {
-				width: 300px;
-				height: 350px;
-				margin-top: -80px;
-				margin-left: -100px;
-			}
+			// @media screen and (min-width: 992px) {
+			// 	width: 300px;
+			// 	height: 350px;
+			// 	margin-top: -80px;
+			// 	margin-left: -100px;
+			// }
 
-			@media screen and (min-width: 1204px) {
-				width: 350px;
-				height: 390px;
-			}
+			// @media screen and (min-width: 1204px) {
+			// 	width: 350px;
+			// 	height: 390px;
+			// }
 		}
 
 		.img2 {
@@ -451,19 +452,20 @@ body {
 				width: 180px;
 				height: 190px;
 				top: 100px;
+				left: 0px;
 			}
 
-			@media screen and (min-width: 992px) {
-				width: 200px;
-				height: 230px;
-				top: 100px;
-			}
+			// @media screen and (min-width: 992px) {
+			// 	width: 200px;
+			// 	height: 230px;
+			// 	top: 100px;
+			// }
 
-			@media screen and (min-width: 1204px) {
-				width: 250px;
-				height: 280px;
-				top: 120px;
-			}
+			// @media screen and (min-width: 1204px) {
+			// 	width: 250px;
+			// 	height: 280px;
+			// 	top: 120px;
+			// }
 		}
 	}
 
@@ -885,62 +887,6 @@ body {
 	}
 }
 
-.auth {
-	.row {
-		min-height: 100vh;
-	}
-
-	img {
-		width: 150px;
-		height: auto;
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	.form-group {
-		position: relative;
-
-		input {
-			padding-left: 40px;
-
-			&:focus {
-				box-shadow: none;
-				outline: none;
-			}
-
-			&::placeholder {
-				color: rgba(255, 255, 255, 0.7);
-				opacity: 1;
-			}
-
-			&:-ms-input-placeholder {
-				color: rgba(255, 255, 255, 0.7);
-			}
-
-			&::-ms-input-placeholder {
-				color: rgba(255, 255, 255, 0.7);
-			}
-		}
-
-		i {
-			position: absolute;
-			left: 15px;
-			top: 40px;
-			color: rgba(255, 255, 255, 0.7);
-		}
-	}
-
-	button {
-		transition: all 300ms ease-in;
-
-		&:hover {
-			transform: scale(0.98);
-		}
-	}
-}
-
 .footer {
 	.text-muted {
 		color: #c5c5c5 !important;
@@ -954,10 +900,14 @@ body {
 	}
 }
 
-.rule {
-	height: 2px;
-	background-color: $sec-color;
-}
+// .bt {
+// 	// border-top: 1px solid $sec-color;
+// }
+
+// .rule {
+// 	height: .00625px;
+// 	background-color: $sec-color;
+// }
 
 .pagination {
 	justify-content: center;

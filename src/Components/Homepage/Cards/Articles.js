@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
 import { connect } from "react-redux";
 import { getAllArticles } from "../../../actions/articles";
 import Pagination from "react-js-pagination";
@@ -14,8 +13,6 @@ const Articles = (props) => {
 	const indexOfLastToDo = activePage * display;
 	const indexOfFirstToDo = indexOfLastToDo - display;
 	useEffect(() => {
-		AOS.init({ duration: 600, once: true });
-
 		if (loading) {
 			props.getAllArticles().then(() => setLoading(false));
 		}
@@ -38,7 +35,7 @@ const Articles = (props) => {
 			<div className="row">
 				{data.map((article) => {
 					return (
-						<div className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up" key={article._id}>
+						<div className="col-md-6 col-lg-4 my-4 mb-lg-5" key={article._id}>
 							<Link to={`/article-details/${article._id}`}>
 								<div className="card bg-light border-0 shadow h-100">
 									<img className="card-img-top" src={article.image} alt={article.title} loading="lazy" />

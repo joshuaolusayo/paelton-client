@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
 import { connect } from "react-redux";
 import { getAllAudios } from "../../../actions/audios";
 
@@ -18,7 +17,7 @@ const Audios = (props) => {
 	const indexOfLastToDo = activePage * display;
 	const indexOfFirstToDo = indexOfLastToDo - display;
 	useEffect(() => {
-		AOS.init({ duration: 600, once: true });
+		
 
 		if (loading) {
 			props.getAllAudios().then(() => setLoading(false));
@@ -42,7 +41,7 @@ const Audios = (props) => {
 			<div className="row">
 				{data.map((audio) => {
 					return (
-						<div key={audio._id} className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">
+						<div key={audio._id} className="col-md-6 col-lg-4 my-4 mb-lg-5">
 							<div className="card bg-light border-0 shadow h-100">
 								<div className="card-body p-4">
 									<h4 className="card-title font-weight-bold">{audio.title}</h4>

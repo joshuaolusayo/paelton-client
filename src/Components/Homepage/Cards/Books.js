@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
 import { connect } from "react-redux";
 import { getAllBooks } from "../../../actions/books";
 
@@ -15,8 +14,6 @@ const Books = (props) => {
 	const indexOfLastToDo = activePage * display;
 	const indexOfFirstToDo = indexOfLastToDo - display;
 	useEffect(() => {
-		AOS.init({ duration: 600, once: true });
-
 		if (loading) {
 			props.getAllBooks().then(() => setLoading(false));
 		}
@@ -39,7 +36,7 @@ const Books = (props) => {
 			<div className="row">
 				{data.map((book) => {
 					return (
-						<div key={book._id} className="col-md-6 col-lg-4 my-4 mb-lg-5" data-aos="fade-up">
+						<div key={book._id} className="col-md-6 col-lg-4 my-4 mb-lg-5">
 							<Link to={`/book-details/${book._id}`}>
 								<div className="card bg-light border-0 shadow">
 									<img className="card-img-top" src={book.image} alt={book.title} loading="lazy" />

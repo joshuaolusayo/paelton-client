@@ -11,14 +11,14 @@ const Profile = () => {
 	}, []);
 
 	return (
-		<div className="bg-svg py-5 py-lg-8 mt-6 profile__elton">
+		<div className="bg-svg py-5 py-lg-6 mt-6 profile__elton">
 			{/* <img className="w-100 wave d-none d-md-inline-block" src="./assets/wave1.png" alt="Wave" /> */}
 			<div className="container-fluid mx-0 my-4 my-md-0 d-flex justify-content-center align-items-center profile">
 				<div className="container" data-aos="zoom-in">
 					<div className="row align-items-center py-5">
 						<div className="col-md-6 order-1 order-md-0">
 							<h3 className="font-weight-bold">
-								SG Elton: <br className="d-inline d-md-block" />A Man Sent From God
+								SG Elton: <br className="d-inline d-md-none" />A Man Sent From God
 							</h3>
 							<p>
 								Pa Elton, as he was popularly called, left his native country, England, to come to Ilesha, Nigeria in March

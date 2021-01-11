@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<>
-			<div className="container-fluid bg-black py-5 py-lg-6 footer">
+			<div className="container-fluid bg-black py-5 footer">
 				<div className="container">
 					<div className="row align-items-stretch justify-content-between">
 						<div className="col-lg-6 d-flex flex-column mt-5 mt-lg-0">
@@ -46,17 +46,29 @@ const Footer = () => {
 							</span>
 						</div>
 					</div>
+					<div className="bt">
+						<svg width="1170" height="1" viewBox="0 0 1170 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line y1="0.75" x2="1170" y2="0.75" stroke="#F88600" strokeWidth="0.5" />
+						</svg>
+
+						<p className="text-light text-center pt-3 pb-0 mb-0">
+							Made with <i className="fa fa-heart text-sec"></i> by{" "}
+							<a className="text-light" href="http://www.ennnovatelab.com">
+								Ennovate Lab
+							</a>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div className="bg-black">
+			{/* <div className="bg-black">
 				<hr className="rule my-0" />
-				<p className="text-light text-center py-5 my-0">
+				<p className="text-light text-center py-4 my-0">
 					Made with <i className="fa fa-heart text-sec"></i> by{" "}
 					<a className="text-light" href="http://www.ennnovatelab.com">
 						Ennovate Lab
 					</a>
 				</p>
-			</div>
+			</div> */}
 		</>
 	);
 };
