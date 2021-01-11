@@ -26,8 +26,8 @@ const Homepage = () => {
 					<meta name="keywords" content="S G Elton, About S G Elton, S G Elton Legacy's website" />
 				</Helmet>
 				<Header />
-				<Profile />
 				<Cards />
+				<Profile />
 				<BeParts />
 				<Footer />
 				<ScrollToTop />

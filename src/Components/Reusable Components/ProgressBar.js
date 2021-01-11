@@ -16,7 +16,6 @@ const ProgressBar = () => {
 			const totalScroll = document.documentElement.scrollTop;
 			const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 			const scroll = `${totalScroll / windowHeight}`;
-
 			setScroll(scroll);
 		};
 
@@ -24,10 +23,9 @@ const ProgressBar = () => {
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
-			window.removeEventListener("scroll", () => progressBarHandler);
-			window.removeEventListener("scroll", () => handleScroll);
+			window.removeEventListener("scroll", progressBarHandler);
+			window.removeEventListener("scroll", handleScroll);
 		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [pathname]);
 
 	return pathname ? (

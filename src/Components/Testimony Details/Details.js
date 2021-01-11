@@ -1,6 +1,7 @@
 import React from "react";
 import Share from "../Reusable Components/Share";
 import ReactHtmlParser from "react-html-parser";
+import { ClipLoader } from "react-spinners";
 
 const Details = (props) => {
 	return props.data ? (
@@ -9,19 +10,20 @@ const Details = (props) => {
 				<div className="col-lg-5 col-xl-4">
 					<Share
 						tag={["Testimonies about S G Elton"]}
-						img={props.image}
 						title={props.title}
 						intro={`This is a testimony about Pa S G Elton shared by ${props.name}`}
 					/>
 				</div>
-				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted">
+				<div className="col-lg-7 col-xl-8 pl-lg-4 pl-xl-5 my-5 my-lg-auto text-muted content">
 					{/* <h1 className="font-weight-bold text-black mb-4">{props.data.title}</h1> */}
 					{ReactHtmlParser(props.data.testimony)}
 				</div>
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="my-5 text-center lead mx-auto">
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 

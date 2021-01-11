@@ -6,7 +6,7 @@ import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Details from "./Details";
 import Header from "./Header";
 import ProgressBar from "../Reusable Components/ProgressBar";
-
+import { ClipLoader } from "react-spinners";
 import { useParams } from "react-router";
 import { fetchArticle } from "../../actions/articles";
 import { connect } from "react-redux";
@@ -43,7 +43,9 @@ const ArticleDetails = (props) => {
 			</HelmetProvider>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="fallback text-center lead d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 

@@ -11,7 +11,7 @@ const Header = () => {
 	});
 
 	return (
-		<header className="header">
+		<header className="header mb-5">
 			<div
 				className={`container-fluid px-0 text-light text-center ${showNav ? "style__header hm" : ""}`}
 				style={{ backgroundImage: "url(/assets/rect.png)" }}

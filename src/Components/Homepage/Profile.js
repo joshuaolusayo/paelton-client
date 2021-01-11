@@ -11,7 +11,7 @@ const Profile = () => {
 	}, []);
 
 	return (
-		<div className="bg-svg py-5 py-lg-8 mb-5 profile__elton">
+		<div className="bg-svg py-5 py-lg-8 mt-6 profile__elton">
 			{/* <img className="w-100 wave d-none d-md-inline-block" src="./assets/wave1.png" alt="Wave" /> */}
 			<div className="container-fluid mx-0 my-4 my-md-0 d-flex justify-content-center align-items-center profile">
 				<div className="container" data-aos="zoom-in">

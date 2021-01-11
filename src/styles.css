@@ -6,10 +6,6 @@ body {
   font-family: "DM Sans", sans-serif !important;
 }
 
-p {
-  font-size: 16px !important;
-}
-
 * {
   transition: all 300ms ease-in;
 }
@@ -464,11 +460,13 @@ p {
 }
 
 .hmpg .profile__elton {
+  margin-top: 6em !important;
   margin-bottom: 6em !important;
 }
 
 @media screen and (min-width: 768px) {
   .hmpg .profile__elton {
+    margin-top: 7rem !important;
     margin-bottom: 7rem !important;
   }
 }

@@ -39,9 +39,6 @@ const Header = (props) => {
 							<i className="fa fa-child pr-3"></i>
 							{props.data.author}
 						</p>
-						<p data-aos="fade-up">
-							<i className="fa fa-copy pr-3"></i>70 pages
-						</p>
 					</div>
 				</div>
 

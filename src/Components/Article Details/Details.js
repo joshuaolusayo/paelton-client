@@ -2,6 +2,7 @@ import React from "react";
 import Articles from "../Homepage/Cards/Articles";
 import Share from "../Reusable Components/Share";
 import ReactHtmlParser from "react-html-parser";
+import { ClipLoader } from "react-spinners";
 
 const Details = (props) => {
 	return props.data ? (
@@ -22,7 +23,9 @@ const Details = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center">Loading...</div>
+		<div className="my-5 text-center">
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 import ShowNav from "../Reusable Components/ShowNav";
+import ReadingTime from "reading-time";
 
 const Header = (props) => {
 	useEffect(() => {
@@ -9,7 +10,6 @@ const Header = (props) => {
 	});
 
 	const [showNav, setShowNav] = useState(false);
-
 	return props.data ? (
 		<header className={`header h-100 bg-pry ${showNav ? "style__header" : ""}`}>
 			<div
@@ -44,7 +44,7 @@ const Header = (props) => {
 								{props.data.title}
 							</p>
 							<span data-aos="fade-up">
-								<i className="fa fa-clock-o"></i> 17 mins read
+								<i className="fa fa-clock-o"></i> {ReadingTime(props.data.testimony).text}
 							</span>
 						</div>
 					</div>

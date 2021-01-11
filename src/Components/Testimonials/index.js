@@ -4,7 +4,7 @@ import Header from "./Header";
 import Testimonies from "./Testimonies";
 import ScrollToTop from "../Reusable Components/ScrollToTop";
 import Footer from "../Reusable Components/Footer";
-
+import { ClipLoader } from "react-spinners";
 import { getAllTestimonials } from "../../actions/testimonial";
 import { connect } from "react-redux";
 
@@ -34,7 +34,9 @@ const Testimonials = (props) => {
 			</HelmetProvider>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="fallback text-center lead d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 
