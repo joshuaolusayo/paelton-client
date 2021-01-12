@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllArticles } from "../../../actions/articles";
 import Pagination from "react-js-pagination";
+import ReadingTime from "reading-time";
 
 const Articles = (props) => {
 	const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ const Articles = (props) => {
 									<div className="card-body p-4">
 										<h5 className="card-title text-black">{article.title}</h5>
 										<p className="card-text text-muted">
-											<i className="fa fa-clock-o"></i> Reading time about 30 minutes
+											<i className="fa fa-clock-o"></i> Reading time about {ReadingTime(article.content).text}
 										</p>
 									</div>
 								</div>
