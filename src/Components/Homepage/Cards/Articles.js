@@ -4,11 +4,12 @@ import { connect } from "react-redux";
 import { getAllArticles } from "../../../actions/articles";
 import Pagination from "react-js-pagination";
 import ReadingTime from "reading-time";
+import { ClipLoader } from "react-spinners";
 
 const Articles = (props) => {
 	const [loading, setLoading] = useState(true);
 	const [activePage, setCurrentPage] = useState(1);
-	const display = 3;
+	const display = 6;
 
 	// Logic for displaying articles
 	const indexOfLastToDo = activePage * display;
@@ -55,9 +56,9 @@ const Articles = (props) => {
 
 			<Pagination
 				activePage={activePage}
-				itemsCountPerPage={3}
+				itemsCountPerPage={6}
 				totalItemsCount={props.articles.data.data.length}
-				pageRangeDisplayed={3}
+				pageRangeDisplayed={6}
 				onChange={handlePageChange}
 			/>
 
@@ -68,7 +69,9 @@ const Articles = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="my-5 text-center lead">
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 

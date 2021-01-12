@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { getAllAudios } from "../../../actions/audios";
-
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-
 import Pagination from "react-js-pagination";
 import ReactHtmlParser from "react-html-parser";
+import { ClipLoader } from "react-spinners";
 
 const Audios = (props) => {
 	const [loading, setLoading] = useState(true);
 	const [activePage, setCurrentPage] = useState(1);
-	const display = 3;
+	const display = 6;
 
 	// Logic for displaying audios
 	const indexOfLastToDo = activePage * display;
@@ -72,9 +71,9 @@ const Audios = (props) => {
 
 			<Pagination
 				activePage={activePage}
-				itemsCountPerPage={3}
+				itemsCountPerPage={6}
 				totalItemsCount={props.audios.data.data.length}
-				pageRangeDisplayed={3}
+				pageRangeDisplayed={6}
 				onChange={handlePageChange}
 			/>
 
@@ -85,7 +84,9 @@ const Audios = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="my-5 text-center lead">
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 

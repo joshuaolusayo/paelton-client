@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllBooks } from "../../../actions/books";
-
 import Pagination from "react-js-pagination";
+import { ClipLoader } from "react-spinners";
 
 const Books = (props) => {
 	const [loading, setLoading] = useState(true);
 	const [activePage, setCurrentPage] = useState(1);
-	const display = 3;
+	const display = 6;
 
 	// Logic for displaying audios
 	const indexOfLastToDo = activePage * display;
@@ -49,9 +49,9 @@ const Books = (props) => {
 
 			<Pagination
 				activePage={activePage}
-				itemsCountPerPage={3}
+				itemsCountPerPage={6}
 				totalItemsCount={props.books.data.data.length}
-				pageRangeDisplayed={3}
+				pageRangeDisplayed={6}
 				onChange={handlePageChange}
 			/>
 
@@ -62,7 +62,9 @@ const Books = (props) => {
 			</div>
 		</div>
 	) : (
-		<div className="my-5 text-center lead">Loading...</div>
+		<div className="my-5 text-center lead">
+			<ClipLoader color={"#0053ac"} loading />
+		</div>
 	);
 };
 
