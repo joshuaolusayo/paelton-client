@@ -42,8 +42,8 @@ const Audios = (props) => {
 							<div className="card bg-light border-0 shadow h-100">
 								<div className="card-body p-4">
 									<h4 className="card-title font-weight-bold">{audio.title}</h4>
-									<div className="card-text">{ReactHtmlParser(audio.description)}</div>
-									<div className="d-flex justify-content-between align-items-center">
+									<div className="card-text mb-5">{ReactHtmlParser(audio.description)}</div>
+									<div className="d-flex justify-content-between card-foot w-100">
 										<a href={audio.link} download={audio.title}>
 											<button className="btn bg-pry text-light d-flex dwn">
 												Download&nbsp;

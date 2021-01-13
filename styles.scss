@@ -346,6 +346,15 @@ body {
 		.rhap_container *:focus {
 			outline: none;
 		}
+
+		.card-foot {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			padding: 1.5rem;
+			overflow-x: hidden;
+		}
 	}
 
 	.prev,
