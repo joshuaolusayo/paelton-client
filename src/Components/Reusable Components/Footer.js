@@ -39,7 +39,7 @@ const Footer = () => {
 								+234 803 854 8073
 							</a>
 							<a className="text-sec py-1 py-lg-auto mt-3" href="mailto:info@sgelton.com">
-								info@sgelton.com
+								info@sgeltonlegacy.org
 							</a>
 							<span className="text-muted py-1 py-lg-auto mt-3">
 								New Nation Center, New Market, OAU, Ile-Ife, Osun State, Nigeria.
@@ -53,7 +53,7 @@ const Footer = () => {
 
 						<p className="text-light text-center pt-3 pb-0 mb-0">
 							Made with <i className="fa fa-heart text-sec"></i> by{" "}
-							<a className="text-light" href="http://www.ennnovatelab.com">
+							<a className="text-light" href="http://www.ennovatelab.com">
 								Ennovate Lab
 							</a>
 						</p>
